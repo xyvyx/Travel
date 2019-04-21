@@ -3,6 +3,8 @@
 
 This is a test for index.
 
+![エビフライトライアングル](https://drive.google.com/open?id=1oyZXkeAPZqYSNs5DNQIbGfy6pOp8_0kO "サンプル")
+
 [Qiita](./index2.md "Qiita")
 
 # Title2
