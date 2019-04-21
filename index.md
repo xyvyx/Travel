@@ -9,6 +9,9 @@ This is a test for index.
 
 [yahoo](http://www.yahoo.co.jp "yahoo")
 
+[test2](https://drive.google.com/open?id=1G76crpnqyfUc5R2DXCnddgHQvzyo6Yik "test")
+
+
 [複雑なクエリーに対応したスター・スキーマ処理](https://www.ibm.com/developerworks/jp/data/library/dataserver/techdoc/star.html "test")
 
 
