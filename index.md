@@ -7,7 +7,8 @@ This is a test for index.
 
 # Title2
 
-[yahoo](http://www.yahoo.co.jp "yahoo")
+[yahoo]
+(http://www.yahoo.co.jp )
 
 [test2](https://drive.google.com/open?id=1G76crpnqyfUc5R2DXCnddgHQvzyo6Yik "test")
 
