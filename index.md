@@ -9,13 +9,10 @@ This is a test for index.
 
 [yahoo](http://www.yahoo.co.jp "yahoo")
 
-[複雑なクエリーに対応したスター・スキーマ処理]
-(https://www.ibm.com/developerworks/jp/data/library/dataserver/techdoc/star.html)
+[複雑なクエリーに対応したスター・スキーマ処理](https://www.ibm.com/developerworks/jp/data/library/dataserver/techdoc/star.html "test")
 
 
-[TechCrunch JapanFrederic Lardinois
-GoogleドキュメントのAPIでタスクの自動化が可能に
-今日、Googleは、Googleドキュメントの新しいAPIが一般向けに開放されたことを発表した。]
+[TechCrunch JapanFrederic LardinoisGoogleドキュメントのAPIでタスクの自動化が可能に今日、Googleは、Googleドキュメントの新しいAPIが一般向けに開放されたことを発表した。]
 (https://jp.techcrunch.com/2019/02/12/2019-02-11-google-docs-gets-an-api-for-task-automation/)
 
 https://www.atmarkit.co.jp/ait/articles/1902/19/news006.html
