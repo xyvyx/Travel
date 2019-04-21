@@ -3,7 +3,7 @@
 
 This is a test for index.
 
-![エビフライトライアングル](https://drive.google.com/open?id=1oyZXkeAPZqYSNs5DNQIbGfy6pOp8_0kO "サンプル")
+![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg  "サンプル")
 
 [Qiita](./index2.md "Qiita")
 
