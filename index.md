@@ -26,3 +26,6 @@ https://www.atmarkit.co.jp/ait/articles/1902/19/news006.html
 ＠IT
 「仕事完了！　でも報告メールは面倒くさい」――GASで実現する報告メール自動化術 (1/3)
 作業終了後の報告メールは面倒くさい。その報告メールを自動化できたら時間に余裕ができるかもしれません。今回は、GASでToDoを完了してリストを変更したら、自動でメールが送信される仕組みを作っていきます。
+
+[test](https://xyvyx.atlassian.net/bdbc1433-39e5-4190-8e42-36830e95770b#media-blob-url=true&id=69f522c7-5973-4910-9446-53e5c11acbf2&collection=contentId-32955&contextId=32955&mimeType=image%2Fjpeg&name=32978&size=43498&width=1900&height=329)
+
