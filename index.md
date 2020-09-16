@@ -32,6 +32,11 @@ This is a test for index.
 
 [yahoo3](https://drive.google.com/file/d/1Rdjpu9Kj7UtslhGPkD8lPGaVrne0TDvO/view?usp=sharing "test2")
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FwCqxHGfHAk" frameborder="0" allowfullscreen></iframe>
 [yahoo6](https://drive.google.com/file/d/1Rdjpu9Kj7UtslhGPkD8lPGaVrne0TDvO/view?usp=sharing "3333")
 
 
+
+<iframe width="560" height="315" src="https://www.yahoo.co.jp/" frameborder="0" allowfullscreen></iframe>
+
+[yahoo7](https://drive.google.com/file/d/1Rdjpu9Kj7UtslhGPkD8lPGaVrne0TDvO/view?usp=sharing "3333")
