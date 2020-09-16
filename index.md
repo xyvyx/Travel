@@ -5,7 +5,7 @@ This is a test for index.
 
 ![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg  "サンプル")
 
-[Qiita](./index2.md "Qiita")
+[index2](./index2.md "index2")
 
 # Title2
 
