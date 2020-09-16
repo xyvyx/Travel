@@ -7,6 +7,12 @@ This is a test for index.
 
 [index2](./index2.md "index2")
 
+https://www.google.com/maps/d/edit?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6&usp=sharing
+
+
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6" width="640" height="480"></iframe>
+
+
 # Title2
 
 [yahoo2](http://www.yahoo.co.jp "test")
