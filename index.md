@@ -20,9 +20,9 @@ This is a test for index.
 
 
 [TechCrunch JapanFrederic LardinoisGoogleドキュメントのAPIでタスクの自動化が可能に今日、Googleは、Googleドキュメントの新しいAPIが一般向けに開放されたことを発表した。]
-(https://jp.techcrunch.com/2019/02/12/2019-02-11-google-docs-gets-an-api-for-task-automation/)
 
-https://www.atmarkit.co.jp/ait/articles/1902/19/news006.html
+)
+
 ＠IT
 「仕事完了！　でも報告メールは面倒くさい」――GASで実現する報告メール自動化術 (1/3)
 作業終了後の報告メールは面倒くさい。その報告メールを自動化できたら時間に余裕ができるかもしれません。今回は、GASでToDoを完了してリストを変更したら、自動でメールが送信される仕組みを作っていきます。
@@ -33,3 +33,7 @@ https://www.atmarkit.co.jp/ait/articles/1902/19/news006.html
 [yahoo3](https://drive.google.com/file/d/1Rdjpu9Kj7UtslhGPkD8lPGaVrne0TDvO/view?usp=sharing "test2")
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/FwCqxHGfHAk" frameborder="0" allowfullscreen></iframe>
+[yahoo6](https://drive.google.com/file/d/1Rdjpu9Kj7UtslhGPkD8lPGaVrne0TDvO/view?usp=sharing "3333")
+
+
+
