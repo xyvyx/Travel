@@ -1,11 +1,13 @@
 
 # Title
 
+
+
 This is a test for index.
 
 ![エビフライトライアングル](http://i.imgur.com/Jjwsc.jpg  "サンプル")
 
-[index2](./index2.md "index2")
+[index2](./README.md "index2")
 
 https://www.google.com/maps/d/edit?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6&usp=sharing
 
