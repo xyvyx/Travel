@@ -11,6 +11,10 @@ This is a test for index.
 
 https://www.google.com/maps/d/edit?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6&usp=sharing
 
+<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6" width="540" height="480"></iframe>
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6" width="640" height="480"></iframe>
+
 
 <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1VD4pE-UKolc--HDzHENaUfbCqs5w5Vy6" width="540" height="480"></iframe>
 
