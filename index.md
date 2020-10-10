@@ -11,3 +11,11 @@
 
 [2020-09-27_「Windows 7」が愛され続けた理由と未来のWindows](https://drive.google.com/file/d/1o8B69oJdP67d2BFNv48HGmg6oYPNmzwo/view)
 
+* 紫外線
+* 除湿剤
+* 消費税申告
+* 専従者
+* 運転免許
+* 健康保険（手紙がくる）
+* 年表の拡充
+* 
