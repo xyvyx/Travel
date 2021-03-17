@@ -18,6 +18,7 @@
 * 運転免許
 * 健康保険（手紙がくる）
 * 年表の拡充
+* 年表の拡充
 
 [obsidian://open?vault=git_pub&file=2020-09-03_%E4%B8%8A%E9%87%8E%E7%BE%8E%E8%A1%93%E9%A4%A8](test)
 
