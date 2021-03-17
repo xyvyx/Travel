@@ -24,3 +24,6 @@
 [obsidian://open?vault=git_pub&file=2020-09-03_%E4%B8%8A%E9%87%8E%E7%BE%8E%E8%A1%93%E9%A4%A8](test)
 
 [obsidian://open?vault=git_pub&file=2020-09-19_%E5%A5%88%E8%89%AF](test2)
+
+[obsidian://open?vault=git_pub&file=2020-10-31_%E9%AB%98%E7%9F%A5](テスト3)
+obsidian://open?vault=git_pub&file=2020-10-31_%E9%AB%98%E7%9F%A5
