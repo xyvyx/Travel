@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "テスト3.md",
             "mode": "source"
           }
         }
@@ -53,7 +53,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0e4a62edf3f75339",
@@ -69,7 +70,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "テスト3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,6 +87,7 @@
     "collapsed": true
   },
   "lastOpenFiles": [
+    "テスト3.md",
     "index.md",
     "2020-10-31_高知.md",
     "index.html.md",
@@ -94,7 +96,6 @@
     "2020-09-03_上野美術館.md",
     "2020-10-31_高知.html.md",
     "test2.md",
-    "test.md",
-    "README.md"
+    "test.md"
   ]
 }
