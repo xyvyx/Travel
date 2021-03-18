@@ -1,7 +1,7 @@
 
 # Title
 
-[obsidian://open?vault=git_pub&file=2021-03-19](2021-03-19)
+[2021-03-19](obsidian://open?vault=git_pub&file=2021-03-19)
 
 [2020-10-31_高知](./2020-10-31_高知.html)
 
