@@ -1,6 +1,8 @@
 
 # Title
 
+[obsidian://open?vault=git_pub&file=2021-03-19](2021-03-19)
+
 [2020-10-31_高知](./2020-10-31_高知.html)
 
 [2020-09-19_奈良](./2020-09-19_奈良.html)
@@ -27,5 +29,6 @@
 [obsidian://open?vault=git_pub&file=2020-09-19_%E5%A5%88%E8%89%AF](test2)
 
 [obsidian://open?vault=git_pub&file=2020-10-31_%E9%AB%98%E7%9F%A5](テスト3)
-obsidian://open?vault=git_pub&file=2020-10-31_%E9%AB%98%E7%9F%A5
+
+
 
