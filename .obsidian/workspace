@@ -10,7 +10,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "テスト3.md",
+            "file": "2021-03-18.md",
             "mode": "source"
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "テスト3.md",
+                "file": "2021-03-18.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -86,15 +86,15 @@
     "collapsed": true
   },
   "lastOpenFiles": [
-    "テスト3.md",
-    "index.md",
-    "2020-10-31_高知.md",
-    "index.html.md",
     "Untitled.md",
-    "2020-09-19_奈良.md",
-    "2020-09-03_上野美術館.md",
-    "2020-10-31_高知.html.md",
+    "index.md",
+    "index.html.md",
+    "p2.md",
+    "README.md",
+    "test.md",
     "test2.md",
-    "test.md"
+    "テスト3.md",
+    "2020-10-31_高知.html.md",
+    "2020-10-31_高知.md"
   ]
 }
