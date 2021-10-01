@@ -4,11 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "cce49ab6cc739b5b",
+        "id": "5098e1bbc1bc8fce",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "index.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -49,8 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0e4a62edf3f75339",
@@ -66,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -82,17 +85,17 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "cce49ab6cc739b5b",
+  "active": "5098e1bbc1bc8fce",
   "lastOpenFiles": [
+    "index.md",
+    "2020-10-31_高知.md",
+    "2020-09-19_奈良.md",
+    "2020-09-03_上野美術館.md",
     "2021-03-19.md",
     "2021-03-18.md",
     "2021-03-17.md",
     "2020-10-31_高知.html.md",
-    "2020-10-31_高知.md",
-    "2020-09-19_奈良.md",
-    "2020-09-03_上野美術館.md",
     "テスト3.md",
-    "test2.md",
-    "test.md"
+    "test2.md"
   ]
 }
