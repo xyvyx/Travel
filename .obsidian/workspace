@@ -4,15 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bcffc59bd3e60412",
+        "id": "cce49ab6cc739b5b",
         "type": "leaf",
-        "active": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "2020-10-31_高知.html.md",
-            "mode": "source"
-          }
+          "type": "empty",
+          "state": {}
         }
       }
     ],
@@ -53,7 +49,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0e4a62edf3f75339",
@@ -69,10 +66,11 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2020-10-31_高知.html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -82,19 +80,19 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
+  "active": "cce49ab6cc739b5b",
   "lastOpenFiles": [
+    "2021-03-19.md",
+    "2021-03-18.md",
+    "2021-03-17.md",
     "2020-10-31_高知.html.md",
     "2020-10-31_高知.md",
     "2020-09-19_奈良.md",
     "2020-09-03_上野美術館.md",
-    "2021-03-20.md",
-    "index.html.md",
-    "test.md",
-    "test2.md",
     "テスト3.md",
-    "README.md"
+    "test2.md",
+    "test.md"
   ]
 }
