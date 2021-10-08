@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "index.md",
+            "file": "2021-03-20.md",
             "mode": "source"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "2021-03-20.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,6 +87,7 @@
   },
   "active": "5098e1bbc1bc8fce",
   "lastOpenFiles": [
+    "2021-03-20.md",
     "index.md",
     "2021-10-08/index.md",
     "2021-10-08/test.jpg",
@@ -95,7 +96,6 @@
     "2020-09-03_上野美術館.md",
     "2021-03-19.md",
     "2021-03-18.md",
-    "2021-03-17.md",
-    "2020-10-31_高知.html.md"
+    "2021-03-17.md"
   ]
 }
