@@ -4,7 +4,7 @@
 [Top](../index.md)
 
 
-![エビフライトライアングル]((https://photos.google.com/photo/AF1QipNrINZxLGQ1UL7aENjqq2mDSMxE6VscwNTLwUOq) "サンプル")
+![エビフライトライアングル]((https://photos.app.goo.gl/tq9Apt3vr36TyH796) "サンプル")
 
 # test1
 ## test2
