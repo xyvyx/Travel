@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "c32df75350e4077e",
+        "id": "dbec9237964df88a",
         "type": "leaf",
         "state": {
           "type": "empty",
@@ -82,17 +82,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "c32df75350e4077e",
+  "active": "dbec9237964df88a",
   "lastOpenFiles": [
+    "2022-02-10.md",
+    "2022-01-29.md",
+    "index.md",
+    "2022-01-09.md",
+    "2021-04-29.md",
+    "2021-04-03.md",
     "2021-10-09/index.md",
     "2021-10-08/index.md",
     "2020-09-19_奈良.md",
-    "2020-10-31_高知.md",
-    "2020-09-03_上野美術館.md",
-    "2021-03-20.md",
-    "2021-03-19.md",
-    "2021-03-18.md",
-    "index.md",
-    "2021-10-08/test.jpg"
+    "2020-10-31_高知.md"
   ]
 }
