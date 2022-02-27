@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\Git\\git_pub"
+		},
+		{
+			"name": "git_pub-1",
+			"path": "..\\..\\Git\\git_pub\\git_pub-1"
+		},
+		{
+			"name": "git_pub",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
