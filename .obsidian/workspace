@@ -7,8 +7,10 @@
         "id": "dbec9237964df88a",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "image",
+          "state": {
+            "file": "2021-04-29/PXL_20210430_014325570.PANO.jpg"
+          }
         }
       }
     ],
@@ -65,6 +67,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "2021-04-29/PXL_20210430_014325570.PANO.jpg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,6 +87,8 @@
   },
   "active": "dbec9237964df88a",
   "lastOpenFiles": [
+    "2021-04-29/PXL_20210430_014325570.PANO.jpg",
+    "2021-04-03/PXL_20210403_064305230.jpg",
     "2022-02-10.md",
     "2022-01-29.md",
     "index.md",
@@ -91,8 +96,6 @@
     "2021-04-29.md",
     "2021-04-03.md",
     "2021-10-09/index.md",
-    "2021-10-08/index.md",
-    "2020-09-19_奈良.md",
-    "2020-10-31_高知.md"
+    "2021-10-08/index.md"
   ]
 }
