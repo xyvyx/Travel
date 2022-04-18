@@ -12,6 +12,6 @@
 2. test3
 3. test4
 
-![代替テキスト](https://img.muji.net/img/item/4549738979234_1260.jpg)
+![無印](https://img.muji.net/img/item/4549738979234_1260.jpg)
 
 [Index](../index)
