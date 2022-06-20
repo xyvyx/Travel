@@ -1,9 +1,9 @@
-[Index](index)
+[Index](../index.md)
 
-# 京都
+# USJ
 
 ![代替テキスト](./2021-11-19/PXL_20211120_023000104.jpg)
 
 ![代替テキスト](./PXL_20210403_064305230.jpg)
 
-[Index](index)
+[Index](../index)
