@@ -7,9 +7,10 @@
         "id": "dbec9237964df88a",
         "type": "leaf",
         "state": {
-          "type": "image",
+          "type": "markdown",
           "state": {
-            "file": "2021-04-29/PXL_20210430_014325570.PANO.jpg"
+            "file": "2023-01-14/main.md",
+            "mode": "preview"
           }
         }
       }
@@ -67,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2021-04-29/PXL_20210430_014325570.PANO.jpg",
+                "file": "2023-01-14/main.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,15 +88,15 @@
   },
   "active": "dbec9237964df88a",
   "lastOpenFiles": [
+    "2023-01-14/main.md",
+    "index.md",
+    "2021-10-22/main.md",
+    "2023-02-25/main.md",
+    "2023-03-18/main.md",
+    "2021-04-29/main.md",
     "2021-04-29/PXL_20210430_014325570.PANO.jpg",
     "2021-04-03/PXL_20210403_064305230.jpg",
     "2022-02-10.md",
-    "2022-01-29.md",
-    "index.md",
-    "2022-01-09.md",
-    "2021-04-29.md",
-    "2021-04-03.md",
-    "2021-10-09/index.md",
-    "2021-10-08/index.md"
+    "2022-01-29.md"
   ]
 }
