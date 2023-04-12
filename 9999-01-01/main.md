@@ -69,4 +69,7 @@
 
 ![Alt text](12_uwajima.jpg)
 
+
 [Index](../index.md)
+
+
