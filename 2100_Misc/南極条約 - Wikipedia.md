@@ -1,0 +1,9 @@
+---
+title: 南極条約 - Wikipedia
+updated: 2018-03-04 13:26:45Z
+created: 2018-03-04 13:26:45Z
+source: https://ja.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E6%9D%A1%E7%B4%84
+author: xyvyx10
+---
+
+[1957年](https://ja.wikipedia.org/wiki/1957%E5%B9%B4)から[1958年](https://ja.wikipedia.org/wiki/1958%E5%B9%B4)の[国際地球観測年](https://ja.wikipedia.org/wiki/%E5%9B%BD%E9%9A%9B%E5%9C%B0%E7%90%83%E8%A6%B3%E6%B8%AC%E5%B9%B4)で、南極における調査研究に協力体制を築いていた[日本](https://ja.wikipedia.org/wiki/%E6%97%A5%E6%9C%AC)・[アメリカ合衆国](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%A1%E3%83%AA%E3%82%AB%E5%90%88%E8%A1%86%E5%9B%BD)・[イギリス](https://ja.wikipedia.org/wiki/%E3%82%A4%E3%82%AE%E3%83%AA%E3%82%B9)・[フランス](https://ja.wikipedia.org/wiki/%E3%83%95%E3%83%A9%E3%83%B3%E3%82%B9)・[ソビエト連邦](https://ja.wikipedia.org/wiki/%E3%82%BD%E3%83%93%E3%82%A8%E3%83%88%E9%80%A3%E9%82%A6)（[継承国](https://ja.wikipedia.org/wiki/%E7%B6%99%E6%89%BF%E5%9B%BD)の現[ロシア](https://ja.wikipedia.org/wiki/%E3%83%AD%E3%82%B7%E3%82%A2)）・[アルゼンチン](https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%BC%E3%83%B3%E3%83%81%E3%83%B3)・[オーストラリア](https://ja.wikipedia.org/wiki/%E3%82%AA%E3%83%BC%E3%82%B9%E3%83%88%E3%83%A9%E3%83%AA%E3%82%A2)・[ベルギー](https://ja.wikipedia.org/wiki/%E3%83%99%E3%83%AB%E3%82%AE%E3%83%BC)・[チリ](https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%AA)・[ニュージーランド](https://ja.wikipedia.org/wiki/%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B8%E3%83%BC%E3%83%A9%E3%83%B3%E3%83%89)・[ノルウェー](https://ja.wikipedia.org/wiki/%E3%83%8E%E3%83%AB%E3%82%A6%E3%82%A7%E3%83%BC)・[南アフリカ](https://ja.wikipedia.org/wiki/%E5%8D%97%E3%82%A2%E3%83%95%E3%83%AA%E3%82%AB)の12か国が、[1959年](https://ja.wikipedia.org/wiki/1959%E5%B9%B4)[12月1日](https://ja.wikipedia.org/wiki/12%E6%9C%881%E6%97%A5)に南極条約を採択した[[1]](https://ja.wikipedia.org/wiki/%E5%8D%97%E6%A5%B5%E6%9D%A1%E7%B4%84#cite_note-shiryoban-1)。
