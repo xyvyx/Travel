@@ -1,12 +1,10 @@
 [Index](../index.md)
 
-# ゲートブリッジ
+# 操作フロー
 
-![Alt text](PXL_20230205_032630942.jpg)
-![Alt text](PXL_20230205_033329205.jpg)
-![Alt text](PXL_20230205_041011845.jpg)
-![Alt text](PXL_20230205_044849252.jpg)
-![Alt text](PXL_20230205_045412524.jpg)
+[エクセル](./D365基本操作フロー_2023-07-22.xlsx)
+
+
 
 
 [Index](../index.md)
