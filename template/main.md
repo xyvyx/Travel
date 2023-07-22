@@ -2,11 +2,7 @@
 
 # ゲートブリッジ
 
-![Alt text](PXL_20230205_032630942.jpg)
-![Alt text](PXL_20230205_033329205.jpg)
-![Alt text](PXL_20230205_041011845.jpg)
-![Alt text](PXL_20230205_044849252.jpg)
-![Alt text](PXL_20230205_045412524.jpg)
+[Alt text](D365基本操作フロー_2023-07-22.xlsx0230205_032630942.jpg)
 
 
 [Index](../index.md)
