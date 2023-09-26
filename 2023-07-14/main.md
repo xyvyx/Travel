@@ -1,4 +1,6 @@
+
 [Index](../index.md)
+
 # 函館
 
 ## 松前城
@@ -17,7 +19,6 @@
 ![Alt text](PXL_20230715_035237724.jpg)
 ![Alt text](PXL_20230715_072306830.jpg)
 ![Alt text](PXL_20230715_075519456.jpg)
-![Alt text](PXL_20230715_075541845.PANO.jpg)
 ![Alt text](PXL_20230716_023221115.jpg)
 ![Alt text](PXL_20230716_034254676.jpg)
 ![Alt text](PXL_20230716_104646001.jpg)
