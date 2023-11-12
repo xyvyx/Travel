@@ -2,6 +2,9 @@
 
 # 操作フロー
 
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d208929.8810166121!2d136.86177914638614!3d35.094732191304296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60037d289900c0d3%3A0x3ad975b4d8e88fdd!2z5qG254ut6ZaT5Y-k5oim5aC05YWs5ZyS!5e0!3m2!1sja!2sjp!4v1699783878115!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
 [エクセル](./D365基本操作フロー_2023-07-22.xlsx)
 
 
