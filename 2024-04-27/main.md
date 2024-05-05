@@ -1,0 +1,45 @@
+[Index](../index.md)
+# 秋田 青森
+
+## 盛岡城
+![alt text](PXL_20240427_025258990.RAW-01.MP.COVER.jpg)
+
+## 銀行
+![text](PXL_20240427_032220611.RAW-01.MP.COVER.jpg)
+
+## 角館
+![text](PXL_20240428_021808302.RAW-01.MP.COVER.jpg)
+
+## 秋田城
+![text](PXL_20240428_055229914.RAW-01.MP.COVER.jpg)
+![text](PXL_20240428_055841974.RAW-01.MP.COVER.jpg)
+
+## 久保田城
+![text](PXL_20240428_065509164.RAW-01.MP.COVER.jpg)
+
+## 灯台
+![text](PXL_20240429_030448817.RAW-01.MP.COVER.jpg)
+
+## 脇本城
+![text](PXL_20240429_044801362.RAW-01.MP.COVER.jpg)
+
+## 白神山地 青池
+![text](PXL_20240430_034114292.RAW-01.MP.COVER.jpg)
+
+## 橋
+![text](PXL_20240501_023040387.RAW-01.MP.COVER.jpg)
+
+## 木造駅
+![text](PXL_20240501_030658376.RAW-01.MP.COVER.jpg)
+
+## 遺跡
+![text](PXL_20240501_052447860.RAW-01.MP.COVER.jpg)
+![text](PXL_20240501_052002548.RAW-01.MP.COVER.jpg)
+
+## 美術館
+![text](PXL_20240501_061118022.RAW-01.MP.COVER.jpg)
+
+## 弘前城
+![text](PXL_20240502_025948985.RAW-01.MP.COVER.jpg)
+
+[Index](../index.md)
