@@ -11,10 +11,10 @@
 ## 大分城
 ![alt text](PXL_20240321_074002311.RAW-01.MP.COVER.jpg)
 
-## 佐伯城
+## 臼杵城
 ![alt text](PXL_20240322_034645294.RAW-01.MP.COVER.jpg)
 
-## 臼杵城
+## 佐伯城
 ![alt text](PXL_20240322_070814684.RAW-01.MP.COVER.jpg)
 ## 岡城
 ![alt text](PXL_20240323_022449214.RAW-01.MP.COVER.jpg)
