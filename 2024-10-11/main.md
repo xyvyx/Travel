@@ -1,10 +1,12 @@
 [Index](../index.md)
-# 上越妙高
+# 平戸
 
-## 上越妙高駅
-![Alt text](PXL_20230624_024832152.MP.jpg)
-![Alt text](PXL_20230624_025026466.jpg)
+## 平戸城
+![alt text](PXL_20241012_024816506.RAW-01.COVER.jpg)
+![alt text](PXL_20241012_032308635.RAW-01.COVER.jpg)
 
+## 見帰りの滝
 
-
+![alt text](PXL_20241013_010428981.RAW-01.COVER.jpg)
+![alt text](PXL_20241013_010441036.RAW-01.COVER.jpg)
 [Index](../index.md)
