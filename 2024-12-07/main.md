@@ -1,0 +1,23 @@
+[Index](../index.md)
+
+# 軍艦クルーズ
+
+![text](PXL_20241207_031115431.RAW-01.COVER.jpg)
+![text](PXL_20241207_033622093.RAW-01.COVER.jpg)
+
+# 観音崎灯台
+
+![text](PXL_20241207_055543612.RAW-01.COVER.jpg)
+![text](PXL_20241207_061303074.RAW-01.COVER.jpg)
+
+# 猿島
+
+![text](PXL_20241208_014920945.RAW-01.COVER.jpg)
+![text](PXL_20241208_015123814.RAW-01.COVER.jpg)
+![text](PXL_20241208_023449640.RAW-01.COVER~2.jpg)
+
+# 三笠
+
+![text](PXL_20241208_031625131.RAW-01.COVER.jpg)
+
+[Index](../index.md)
