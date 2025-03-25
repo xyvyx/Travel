@@ -1,0 +1,30 @@
+[Index](../index.md)
+# 広島・岡山
+
+## 吉田郡山城
+![alt text](PXL_20250320_004215211.RAW-01.COVER_1.jpg)
+![alt text](PXL_20250320_004222171.RAW-01.COVER_1.jpg)
+
+## 新高山城
+![alt text](PXL_20250320_030004211.RAW-01.COVER_1.jpg)
+![alt text](PXL_20250320_025316534.RAW-01.COVER_1.jpg)
+
+## 三原城
+![text](PXL_20250320_045936680.RAW-01.COVER_1.jpg)
+
+## 福山城
+![text](PXL_20250321_000420834.RAW-01.COVER_1.jpg)
+![text](PXL_20250321_000934398.RAW-01.COVER_1.jpg)
+
+## 鬼ノ城
+![text](PXL_20250321_034959382.RAW-01.COVER_1.jpg)
+![text](PXL_20250321_034314909.RAW-01.COVER_1.jpg)
+
+## 岡山城
+![text](PXL_20250321_062738854.RAW-01.COVER_1.jpg)
+
+## 津山城
+![text](PXL_20250322_030721272.RAW-01.COVER_1.jpg)
+![text](PXL_20250322_030903437.RAW-01.COVER_1.jpg)
+
+[Index](../index.md)
