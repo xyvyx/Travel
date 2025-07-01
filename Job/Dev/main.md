@@ -94,5 +94,32 @@ End Sub
     <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 </svg>
 
+## 列非表示
+
+Sub HideColumnsUnlessYellow()
+
+    Dim ws As Worksheet
+    Dim lastColumn As Long
+    Dim i As Long
+
+    'アクティブなワークシートを設定
+    Set ws = ActiveSheet
+
+    '1行目の最後の列を取得
+    lastColumn = ws.Cells(1, Columns.Count).End(xlToLeft).Column
+
+    '1列目から最後の列までループ
+    For i = 1 To lastColumn
+        'もし1行目のセルの色が黄色（RGB(255, 255, 0)）でなければ
+        If ws.Cells(1, i).Interior.Color <> RGB(255, 255, 0) Then
+            'その列を非表示にする
+            ws.Columns(i).Hidden = True
+        Else
+            'もしその列が非表示になっていれば表示する（念のため）
+            ws.Columns(i).Hidden = False
+        End If
+    Next i
+
+End Sub
 
 [Index](../index.md)
