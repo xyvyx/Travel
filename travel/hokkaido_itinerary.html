@@ -112,7 +112,8 @@ body{
 
 /* ---------- Car voucher ---------- */
 .voucher{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage);}
-.voucher .tag{color:var(--sage);}
+.voucher .tag{color:var(--sage); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.voucher .tag a{color:var(--sage); text-decoration:none; border-bottom:1px dotted var(--sage); font-size:11px; white-space:nowrap;}
 .voucher h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
 .voucher .grid{
   display:grid; grid-template-columns:1fr 1fr; gap:10px 20px; margin-top:14px; font-size:13px; color:var(--ink);
@@ -126,7 +127,10 @@ body{
 
 /* ---------- Hotel key ---------- */
 .hotel{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--amber);}
-.hotel .tag{color:var(--amber);}
+.hotel .tag{color:var(--amber); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.hotel .tag a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber); font-size:11px; white-space:nowrap;}
+.hotel .hotel-name{font-family:'Shippori Mincho',serif; font-size:25px; font-weight:800; margin-top:10px; color:var(--ink); line-height:1.4;}
+.hotel .hotel-plan{font-size:12.5px; color:var(--ink-soft); margin-top:4px; line-height:1.6;}
 .hotel h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
 .hotel .rows{margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:13px;}
 .hotel .rows div{display:flex; justify-content:space-between; color:var(--ink);}
@@ -229,7 +233,7 @@ body{
 <div class="wrap">
 
   <div class="hero">
-    <div class="eyebrow">Itinerary · 樋口様</div>
+    <div class="eyebrow">Itinerary</div>
     <h1>北海道<span>周遊</span>紀行</h1>
     <div class="route">HND ⇄ CTS ・ SHB → KUH（レンタカー）・ 洞爺湖 ・ ES CON FIELD ・ 千歳温泉</div>
     <div class="dates">2026年9月19日（土）—— 9月26日（土）</div>
@@ -272,15 +276,16 @@ body{
             <div><span>DEPARTURE</span><b>18:00</b></div>
             <div><span>ARRIVAL</span><b>19:40</b></div>
           </div>
-          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a> ・ <a href="https://aswbe.ana.co.jp/webapps/servicing/booking-search?CONNECTION_KIND=JPN&LANG=ja" target="_blank">ANAで予約を確認 ↗</a></div>
         </div>
         <div class="pass-stub">BOARDING</div>
       </div>
 
       <div class="card hotel">
         <div class="card-inner">
-          <div class="tag">🏨 エアターミナルホテル（新千歳空港内）</div>
-          <h3>喫煙ツインルーム【駐車場側】・早得28プラン（朝食＆温泉無料）</h3>
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://www.air-terminal-hotel.jp/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">エアターミナルホテル（新千歳空港内）</div>
+          <div class="hotel-plan">喫煙ツインルーム【駐車場側】・早得28プラン（朝食＆温泉無料）</div>
           <div class="rows">
             <div><span>予約番号</span><span>X-6TBE6DR8D8E</span></div>
             <div><span>所在地</span><span>千歳市美々 新千歳空港国内線ターミナルビル3階</span></div>
@@ -316,13 +321,14 @@ body{
             <div><span>DEPARTURE</span><b>8:05</b></div>
             <div><span>ARRIVAL</span><b>8:55</b></div>
           </div>
+          <div class="pass-meta"><a href="https://aswbe.ana.co.jp/webapps/servicing/booking-search?CONNECTION_KIND=JPN&LANG=ja" target="_blank">ANAで予約を確認 ↗</a></div>
         </div>
         <div class="pass-stub">BOARDING</div>
       </div>
 
       <div class="card voucher">
         <div class="card-inner">
-          <div class="tag">🚗 レンタカー ・ トヨタレンタカー</div>
+          <div class="tag"><span>🚗 レンタカー ・ トヨタレンタカー</span><a href="https://rent.toyota.co.jp/rakuraku/inquiry/" target="_blank">予約を確認 ↗</a></div>
           <h3>ヤリスHEV（C2クラス）1台・禁煙車</h3>
           <div class="grid">
             <div><span>予約番号</span>98183700300</div>
@@ -386,7 +392,7 @@ body{
             <div><span>DEPARTURE</span><b>14:35</b></div>
             <div><span>ARRIVAL</span><b>15:20</b></div>
           </div>
-          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a> ・ <a href="https://aswbe.ana.co.jp/webapps/servicing/booking-search?CONNECTION_KIND=JPN&LANG=ja" target="_blank">ANAで予約を確認 ↗</a></div>
         </div>
         <div class="pass-stub">BOARDING</div>
       </div>
@@ -394,7 +400,7 @@ body{
 
       <div class="card voucher">
         <div class="card-inner">
-          <div class="tag">🚗 レンタカー（2台目）・ トヨタレンタカー</div>
+          <div class="tag"><span>🚗 レンタカー（2台目）・ トヨタレンタカー</span><a href="https://rent.toyota.co.jp/rakuraku/inquiry/" target="_blank">予約を確認 ↗</a></div>
           <h3>ヤリス（C1クラス）1台・禁煙車</h3>
           <div class="grid">
             <div><span>予約番号</span>98183703700</div>
@@ -418,8 +424,9 @@ body{
 
       <div class="card hotel">
         <div class="card-inner">
-          <div class="tag">🏨 ザ・ウィンザーホテル洞爺（Vignette Collection）</div>
-          <h3>プレミアム ツイン 海側・会員限定アドバンスセーバー　1泊目</h3>
+          <div class="tag"><span>🏨 HOTEL・Vignette Collection</span><a href="https://www.windsor-hotels.co.jp/ja/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ザ・ウィンザーホテル洞爺</div>
+          <div class="hotel-plan">プレミアム ツイン 海側・会員限定アドバンスセーバー　1泊目</div>
           <div class="rows">
             <div><span>所在地</span><span>虻田郡 洞爺湖町 336　北海道 049-5722</span></div>
             <div><span>TEL</span><span>0142-73-1111</span></div>
@@ -441,8 +448,9 @@ body{
     <div class="cards">
       <div class="card hotel">
         <div class="card-inner">
-          <div class="tag">🏨 ザ・ウィンザーホテル洞爺（Vignette Collection）</div>
-          <h3>プレミアム ツイン 海側・会員限定アドバンスセーバー　2泊目</h3>
+          <div class="tag"><span>🏨 HOTEL・Vignette Collection</span><a href="https://www.windsor-hotels.co.jp/ja/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ザ・ウィンザーホテル洞爺</div>
+          <div class="hotel-plan">プレミアム ツイン 海側・会員限定アドバンスセーバー　2泊目</div>
           <div class="rows">
             <div><span>人数・室数</span><span>大人2名・1室</span></div>
           </div>
@@ -471,8 +479,9 @@ body{
 
       <div class="card hotel">
         <div class="card-inner">
-          <div class="tag">♨️ 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
-          <h3>デラックスツインルーム（禁煙・素泊り）1泊目</h3>
+          <div class="tag"><span>♨️ HOTEL</span><a href="https://dormy-hotels.com/dormyinn/hotels/chitose/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">天然温泉 鶴舞の湯 ドーミーイン千歳</div>
+          <div class="hotel-plan">デラックスツインルーム（禁煙・素泊り）1泊目</div>
           <div class="rows">
             <div><span>予約番号</span><span>2026053129901554</span></div>
             <div><span>宿泊者 / 予約者</span><span>樋口 忠生 様</span></div>
@@ -515,8 +524,9 @@ body{
     <div class="cards">
       <div class="card hotel">
         <div class="card-inner">
-          <div class="tag">♨️ 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
-          <h3>デラックスツインルーム（禁煙・素泊り）2泊目</h3>
+          <div class="tag"><span>♨️ HOTEL</span><a href="https://dormy-hotels.com/dormyinn/hotels/chitose/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">天然温泉 鶴舞の湯 ドーミーイン千歳</div>
+          <div class="hotel-plan">デラックスツインルーム（禁煙・素泊り）2泊目</div>
           <div class="rows">
             <div><span>プラン</span><span>大浴場×サウナでととのう ドーミーインスタンダード</span></div>
             <div><span>人数・室数</span><span>大人2名・1室</span></div>
@@ -548,7 +558,7 @@ body{
             <div><span>DEPARTURE</span><b>17:00</b></div>
             <div><span>ARRIVAL</span><b>18:40</b></div>
           </div>
-          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a> ・ <a href="https://aswbe.ana.co.jp/webapps/servicing/booking-search?CONNECTION_KIND=JPN&LANG=ja" target="_blank">ANAで予約を確認 ↗</a></div>
         </div>
         <div class="pass-stub">BOARDING</div>
       </div>
