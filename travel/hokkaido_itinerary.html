@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>北海道周遊 2026.09.19-26</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
@@ -216,9 +217,44 @@ body{
 }
 
 @media(max-width:520px){
-  .hero h1{font-size:32px;}
-  .pass-times{gap:16px;}
+  body{padding:32px 12px 70px;}
+  .hero h1{font-size:28px;}
+  .hero .eyebrow{font-size:11px; letter-spacing:.2em;}
+  .hero .route{font-size:11.5px;}
+
+  .day-head .num{font-size:24px; min-width:60px;}
+  .day-head .note{font-size:10.5px;}
+
+  .card-inner, .pass-main, .ticket-main, .bus-main{padding:16px 16px;}
+
+  /* stack ticket-style cards vertically on narrow screens */
+  .pass, .bus, .ticket{flex-direction:column;}
+  .pass-stub, .bus-stub, .ticket-stub{
+    width:100%; height:30px; writing-mode:horizontal-tb; border-left:0;
+    border-top:2px dashed var(--line); letter-spacing:.15em; font-size:11px;
+  }
+
+  .pass-route{gap:8px;}
+  .pass-route .apt{font-size:21px;}
+  .pass-times{gap:18px;}
+  .pass-times div b{font-size:17px;}
+
+  .bus-route{gap:8px;}
+  .bus-route .pt{font-size:14px; max-width:120px;}
+
   .voucher .grid{grid-template-columns:1fr;}
+  .hotel .hotel-name{font-size:20px;}
+  .hotel .tag, .voucher .tag{flex-wrap:wrap;}
+
+  .ticket-seats{gap:6px;}
+  .seat{font-size:11px; padding:5px 8px;}
+
+  .map-card iframe{height:220px;}
+}
+
+@media(max-width:360px){
+  .hero h1{font-size:24px;}
+  .day-head .num{font-size:20px; min-width:50px;}
 }
 
 @media print{
