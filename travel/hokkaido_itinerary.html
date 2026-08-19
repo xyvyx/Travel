@@ -187,6 +187,16 @@ body{
 .map-card iframe{
   width:100%; height:280px; border:0; display:block; filter:grayscale(15%);
 }
+.map-frame{position:relative;}
+.map-link{
+  position:absolute; inset:0; z-index:2; display:flex; align-items:flex-end; justify-content:flex-end;
+  text-decoration:none;
+}
+.map-link .badge{
+  margin:10px; padding:5px 10px; border-radius:20px; background:var(--ink); color:var(--paper);
+  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.05em; opacity:0; transition:opacity .15s;
+}
+.map-link:hover .badge{opacity:1;}
 
 /* ---------- drive note ---------- */
 .drive-note{
@@ -328,12 +338,18 @@ body{
       <div class="drive-note"><div class="dot"></div>中標津空港から納沙布岬へレンタカーで移動</div>
       <div class="map-card">
         <div class="map-caption">🗺 ルート：中標津空港 → 納沙布岬</div>
-        <iframe src="https://maps.google.com/maps?saddr=中標津空港&daddr=納沙布岬&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-frame">
+          <iframe src="https://maps.google.com/maps?saddr=中標津空港&daddr=納沙布岬&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/dir/?api=1&origin=中標津空港&destination=納沙布岬" target="_blank" rel="noopener"><span class="badge">Googleマップで開く ↗</span></a>
+        </div>
       </div>
       <div class="drive-note"><div class="dot"></div>納沙布岬から釧路プリンスホテルへレンタカーで移動</div>
       <div class="map-card">
         <div class="map-caption">🗺 ルート：納沙布岬 → 釧路プリンスホテル</div>
-        <iframe src="https://maps.google.com/maps?saddr=納沙布岬&daddr=釧路プリンスホテル&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-frame">
+          <iframe src="https://maps.google.com/maps?saddr=納沙布岬&daddr=釧路プリンスホテル&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/dir/?api=1&origin=納沙布岬&destination=釧路プリンスホテル" target="_blank" rel="noopener"><span class="badge">Googleマップで開く ↗</span></a>
+        </div>
       </div>
     </div>
   </div>
@@ -394,7 +410,10 @@ body{
       <div class="drive-note"><div class="dot"></div>新千歳空港から洞爺湖方面へレンタカーで移動</div>
       <div class="map-card">
         <div class="map-caption">🗺 ルート：新千歳空港 → ザ・ウィンザーホテル洞爺</div>
-        <iframe src="https://maps.google.com/maps?saddr=新千歳空港&daddr=ザ・ウィンザーホテル洞爺&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-frame">
+          <iframe src="https://maps.google.com/maps?saddr=新千歳空港&daddr=ザ・ウィンザーホテル洞爺&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/dir/?api=1&origin=新千歳空港&destination=ザ・ウィンザーホテル洞爺" target="_blank" rel="noopener"><span class="badge">Googleマップで開く ↗</span></a>
+        </div>
       </div>
 
       <div class="card hotel">
@@ -444,7 +463,10 @@ body{
       <div class="drive-note"><div class="dot"></div>ザ・ウィンザーホテル洞爺 チェックアウト 12:00 → 新千歳方面へ移動</div>
       <div class="map-card">
         <div class="map-caption">🗺 ルート：ザ・ウィンザーホテル洞爺 → 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
-        <iframe src="https://maps.google.com/maps?saddr=ザ・ウィンザーホテル洞爺&daddr=天然温泉鶴舞の湯ドーミーイン千歳&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-frame">
+          <iframe src="https://maps.google.com/maps?saddr=ザ・ウィンザーホテル洞爺&daddr=天然温泉鶴舞の湯ドーミーイン千歳&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <a class="map-link" href="https://www.google.com/maps/dir/?api=1&origin=ザ・ウィンザーホテル洞爺&destination=天然温泉鶴舞の湯ドーミーイン千歳" target="_blank" rel="noopener"><span class="badge">Googleマップで開く ↗</span></a>
+        </div>
       </div>
 
       <div class="card hotel">
