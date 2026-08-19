@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>北海道周遊 2026.09.19-26</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root{
+  --ink:#1B1B1B;
+  --ink-soft:#4A4A4A;
+  --paper:#FFFFFF;
+  --card:#FAFAF8;
+  --amber:#8A5A12;
+  --sage:#3F5C46;
+  --rose:#8A3E3E;
+  --line:#D8D5CC;
+  --line-soft:#E8E6DF;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans JP', sans-serif;
+  min-height:100vh;
+  padding:56px 16px 90px;
+}
+
+.wrap{max-width:760px;margin:0 auto;}
+
+/* ---------- Header ---------- */
+.hero{padding:0 4px 32px; border-bottom:2px solid var(--ink); margin-bottom:44px;}
+.hero .eyebrow{
+  font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+  color:var(--amber); text-transform:uppercase; margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:44px;
+  line-height:1.35; letter-spacing:.02em; color:var(--ink);
+}
+.hero h1 span{color:var(--amber);}
+.hero .route{
+  margin-top:18px; font-family:'JetBrains Mono',monospace; font-size:13px;
+  color:var(--ink-soft); letter-spacing:.05em;
+}
+.hero .dates{
+  margin-top:6px; font-size:14px; color:var(--ink-soft);
+}
+
+/* ---------- Day marker ---------- */
+.day{margin-bottom:46px; position:relative;}
+.day-head{
+  display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+  padding-left:2px; border-bottom:1px solid var(--line); padding-bottom:10px;
+}
+.day-head .num{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:30px; color:var(--ink);
+  min-width:78px;
+}
+.day-head .dow{
+  font-size:13px; padding:3px 10px; border-radius:20px; letter-spacing:.05em;
+  border:1px solid var(--ink); color:var(--ink);
+}
+.day-head .dow.sat{border-color:var(--sage); color:var(--sage);}
+.day-head .dow.sun{border-color:var(--rose); color:var(--rose);}
+.day-head .note{margin-left:auto; font-size:12px; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+
+.cards{display:flex; flex-direction:column; gap:16px;}
+
+/* ---------- Base card ---------- */
+.card{
+  border-radius:10px; position:relative; overflow:hidden;
+  background:var(--card); border:1px solid var(--line);
+}
+.card-inner{padding:20px 22px;}
+.tag{
+  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; font-weight:700; display:flex; align-items:center; gap:6px;
+}
+
+/* ---------- Boarding pass (flight) ---------- */
+.pass{
+  background:var(--card);
+  border:1px solid var(--ink);
+  border-left:5px solid var(--amber);
+  display:flex;
+}
+.pass-main{flex:1; padding:20px 22px;}
+.pass-main .tag{color:var(--amber);}
+.pass-route{
+  display:flex; align-items:center; gap:14px; margin-top:12px;
+}
+.pass-route .apt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:26px; color:var(--ink);}
+.pass-route .city{font-size:11px; color:var(--ink-soft); margin-top:2px;}
+.pass-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:40px;}
+.pass-route .arrow::after{content:'✈';position:absolute; right:0; top:-9px; font-size:14px; color:var(--amber);}
+.pass-times{display:flex; gap:26px; margin-top:14px; font-family:'JetBrains Mono',monospace;}
+.pass-times div span{display:block; font-size:10px; color:var(--ink-soft);}
+.pass-times div b{font-size:20px; color:var(--ink);}
+.pass-meta{
+  margin-top:14px; font-size:12px; color:var(--ink-soft); display:flex; gap:10px; flex-wrap:wrap;
+}
+.pass-meta a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber);}
+.pass-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Car voucher ---------- */
+.voucher{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage);}
+.voucher .tag{color:var(--sage);}
+.voucher h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
+.voucher .grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:10px 20px; margin-top:14px; font-size:13px; color:var(--ink);
+}
+.voucher .grid div span{display:block; font-size:11px; color:var(--ink-soft);}
+.voucher .price{
+  margin-top:16px; padding-top:14px; border-top:1px dashed var(--line);
+  display:flex; justify-content:space-between; align-items:baseline;
+}
+.voucher .price b{font-family:'JetBrains Mono',monospace; font-size:22px; color:var(--sage);}
+
+/* ---------- Hotel key ---------- */
+.hotel{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--amber);}
+.hotel .tag{color:var(--amber);}
+.hotel h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
+.hotel .rows{margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:13px;}
+.hotel .rows div{display:flex; justify-content:space-between; color:var(--ink);}
+.hotel .rows div span:first-child{color:var(--ink-soft);}
+.hotel .total{
+  margin-top:14px; padding-top:12px; border-top:1px dashed var(--line);
+  display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--amber);
+}
+
+/* ---------- Ticket stub (baseball) ---------- */
+.ticket{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--rose); display:flex;}
+.ticket-main{flex:1; padding:20px 22px;}
+.ticket-main .tag{color:var(--rose);}
+.ticket-main h3{font-family:'Shippori Mincho',serif; font-size:19px; margin-top:8px; line-height:1.5; color:var(--ink);}
+.ticket-main .vs{color:var(--rose); font-weight:700;}
+.ticket-main .info{margin-top:12px; font-size:13px; color:var(--ink-soft); display:flex; flex-direction:column; gap:4px;}
+.ticket-seats{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;}
+.seat{
+  font-family:'JetBrains Mono',monospace; font-size:12px; padding:6px 10px; border-radius:8px;
+  background:var(--line-soft); border:1px solid var(--line); color:var(--ink);
+}
+.ticket-stub{
+  width:64px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:11px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Bus ticket ---------- */
+.bus{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage); display:flex;}
+.bus-main{flex:1; padding:20px 22px;}
+.bus-main .tag{color:var(--sage);}
+.bus-route{display:flex; align-items:center; gap:14px; margin-top:12px;}
+.bus-route .pt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:17px; color:var(--ink); max-width:160px;}
+.bus-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:30px;}
+.bus-route .arrow::after{content:'🚌';position:absolute; right:0; top:-9px; font-size:13px;}
+.bus-times{display:flex; gap:26px; margin-top:14px; font-family:'JetBrains Mono',monospace;}
+.bus-times div span{display:block; font-size:10px; color:var(--ink-soft);}
+.bus-times div b{font-size:20px; color:var(--ink);}
+.bus-meta{margin-top:14px; font-size:12px; color:var(--ink-soft);}
+.bus-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- map embed ---------- */
+.map-card{
+  border-radius:10px; overflow:hidden; border:1px solid var(--ink); border-left:5px solid var(--sage);
+  background:var(--card);
+}
+.map-card .map-caption{
+  padding:12px 18px; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.08em; color:var(--sage); display:flex; align-items:center; gap:8px;
+  border-bottom:1px solid var(--line-soft);
+}
+.map-card iframe{
+  width:100%; height:280px; border:0; display:block; filter:grayscale(15%);
+}
+
+/* ---------- drive note ---------- */
+.drive-note{
+  display:flex; align-items:center; gap:10px; font-size:13px; color:var(--ink-soft);
+  padding:2px 4px 2px 8px; font-family:'JetBrains Mono',monospace;
+}
+.drive-note .dot{width:6px;height:6px;border-radius:50%;background:var(--sage);}
+
+/* ---------- footer ---------- */
+.footer{
+  margin-top:60px; padding-top:24px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--ink-soft); text-align:center; letter-spacing:.05em;
+}
+
+@media(max-width:520px){
+  .hero h1{font-size:32px;}
+  .pass-times{gap:16px;}
+  .voucher .grid{grid-template-columns:1fr;}
+}
+
+@media print{
+  body{padding:12px 8px;}
+  .card{break-inside:avoid;}
+  .day{break-inside:avoid;}
+  a{color:inherit; text-decoration:underline;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Itinerary · 樋口様</div>
+    <h1>北海道<span>周遊</span>紀行</h1>
+    <div class="route">HND ⇄ CTS ・ SHB → KUH（レンタカー）・ 洞爺湖 ・ ES CON FIELD ・ 千歳温泉</div>
+    <div class="dates">2026年9月19日（土）—— 9月26日（土）</div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/19</div>
+      <div class="dow sat">土</div>
+      <div class="note">DAY 1</div>
+    </div>
+    <div class="cards">
+      <div class="card bus">
+        <div class="bus-main">
+          <div class="tag">🚌 空港リムジンバス</div>
+          <div class="bus-route">
+            <div class="pt">東陽町駅</div>
+            <div class="arrow"></div>
+            <div class="pt">羽田空港 第２ターミナル</div>
+          </div>
+          <div class="bus-times">
+            <div><span>発時刻</span><b>16:00</b></div>
+            <div><span>到着予定時刻</span><b>16:30</b></div>
+          </div>
+          <div class="bus-meta">運賃：大人 ￥1,200 ×2名</div>
+        </div>
+        <div class="bus-stub">LIMOUSINE</div>
+      </div>
+
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ NH075 ・ ANA特典 ・ 国内特典エコノミー</div>
+          <div class="pass-route">
+            <div><div class="apt">HND</div><div class="city">東京 羽田</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">CTS</div><div class="city">札幌 新千歳</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>18:00</b></div>
+            <div><span>ARRIVAL</span><b>19:40</b></div>
+          </div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">🏨 エアターミナルホテル（新千歳空港内）</div>
+          <h3>喫煙ツインルーム【駐車場側】・早得28プラン（朝食＆温泉無料）</h3>
+          <div class="rows">
+            <div><span>予約番号</span><span>X-6TBE6DR8D8E</span></div>
+            <div><span>所在地</span><span>千歳市美々 新千歳空港国内線ターミナルビル3階</span></div>
+            <div><span>TEL</span><span>0123-45-6677</span></div>
+            <div><span>チェックイン</span><span>20:00</span></div>
+            <div><span>人数・室数</span><span>大人2名・1室</span></div>
+            <div><span>支払い方法</span><span>現地決済</span></div>
+          </div>
+          <div class="total"><span>合計金額</span><span>27,200円</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/20</div>
+      <div class="dow sun">日</div>
+      <div class="note">DAY 2</div>
+    </div>
+    <div class="cards">
+      <div class="drive-note"><div class="dot"></div>エアターミナルホテル チェックアウト 11:00（予定）</div>
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ 国内線 ・ 札幌 → 根室中標津</div>
+          <div class="pass-route">
+            <div><div class="apt">CTS</div><div class="city">札幌 新千歳</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">SHB</div><div class="city">根室中標津</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>8:05</b></div>
+            <div><span>ARRIVAL</span><b>8:55</b></div>
+          </div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+      <div class="card voucher">
+        <div class="card-inner">
+          <div class="tag">🚗 レンタカー ・ トヨタレンタカー</div>
+          <h3>ヤリスHEV（C2クラス）1台・禁煙車</h3>
+          <div class="grid">
+            <div><span>予約番号</span>98183700300</div>
+            <div><span>出発日時</span>2026/09/20 9:30</div>
+            <div><span>出発店舗</span>中標津空港店（TEL 0153-78-8100）<br>標津郡中標津町北中17-9</div>
+            <div><span>返却店舗</span>釧路店（釧路市栄町12-1-1）</div>
+            <div><span>返却日時</span>2026/09/22 18:00</div>
+            <div><span>免責補償</span>加入 ・ AT ・ 利用マイル 54マイル</div>
+          </div>
+          <div class="price"><span>ご利用総額（税込）</span><b>44,200円</b></div>
+        </div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>中標津空港から納沙布岬へレンタカーで移動</div>
+      <div class="map-card">
+        <div class="map-caption">🗺 ルート：中標津空港 → 納沙布岬</div>
+        <iframe src="https://maps.google.com/maps?saddr=中標津空港&daddr=納沙布岬&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="drive-note"><div class="dot"></div>納沙布岬から釧路プリンスホテルへレンタカーで移動</div>
+      <div class="map-card">
+        <div class="map-caption">🗺 ルート：納沙布岬 → 釧路プリンスホテル</div>
+        <iframe src="https://maps.google.com/maps?saddr=納沙布岬&daddr=釧路プリンスホテル&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 (drive) -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/21</div>
+      <div class="dow">月</div>
+      <div class="note">DAY 3</div>
+    </div>
+    <div class="cards">
+      <div class="drive-note"><div class="dot"></div>釧路湿原観光</div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/22</div>
+      <div class="dow">火</div>
+      <div class="note">DAY 4</div>
+    </div>
+    <div class="cards">
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ NH4874 ・ ANAウイングス ・ ANA特典</div>
+          <div class="pass-route">
+            <div><div class="apt">KUH</div><div class="city">釧路</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">CTS</div><div class="city">札幌 新千歳</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>14:35</b></div>
+            <div><span>ARRIVAL</span><b>15:20</b></div>
+          </div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>1台目レンタカーは同日 18:00 に釧路店へ返却予定</div>
+
+      <div class="card voucher">
+        <div class="card-inner">
+          <div class="tag">🚗 レンタカー（2台目）・ トヨタレンタカー</div>
+          <h3>ヤリス（C1クラス）1台・禁煙車</h3>
+          <div class="grid">
+            <div><span>予約番号</span>98183703700</div>
+            <div><span>出発日時</span>2026/09/22 12:00</div>
+            <div><span>出発店舗</span>新千歳空港ポプラ店（TEL 0123-23-0100）<br>千歳市美々758-137</div>
+            <div><span>返却店舗</span>新千歳空港ポプラ店（同上）</div>
+            <div><span>返却日時</span>2026/09/24 20:00</div>
+            <div><span>到着便</span>全日空 NH4874 ・ AT ・ 免責補償加入</div>
+          </div>
+          <div class="price"><span>ご利用総額（税込）</span><b>32,098円</b></div>
+        </div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>新千歳空港から洞爺湖方面へレンタカーで移動</div>
+      <div class="map-card">
+        <div class="map-caption">🗺 ルート：新千歳空港 → ザ・ウィンザーホテル洞爺</div>
+        <iframe src="https://maps.google.com/maps?saddr=新千歳空港&daddr=ザ・ウィンザーホテル洞爺&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">🏨 ザ・ウィンザーホテル洞爺（Vignette Collection）</div>
+          <h3>プレミアム ツイン 海側・会員限定アドバンスセーバー　1泊目</h3>
+          <div class="rows">
+            <div><span>所在地</span><span>虻田郡 洞爺湖町 336　北海道 049-5722</span></div>
+            <div><span>TEL</span><span>0142-73-1111</span></div>
+            <div><span>チェックイン</span><span>15:00</span></div>
+            <div><span>人数・室数</span><span>大人2名・1室</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/23</div>
+      <div class="dow">水</div>
+      <div class="note">DAY 5</div>
+    </div>
+    <div class="cards">
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">🏨 ザ・ウィンザーホテル洞爺（Vignette Collection）</div>
+          <h3>プレミアム ツイン 海側・会員限定アドバンスセーバー　2泊目</h3>
+          <div class="rows">
+            <div><span>人数・室数</span><span>大人2名・1室</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>宿泊合計 86,526円（2泊3日・大人2名）／チェックアウト 9/24 12:00</div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/24</div>
+      <div class="dow">木</div>
+      <div class="note">DAY 6</div>
+    </div>
+    <div class="cards">
+      <div class="drive-note"><div class="dot"></div>ザ・ウィンザーホテル洞爺 チェックアウト 12:00 → 新千歳方面へ移動</div>
+      <div class="map-card">
+        <div class="map-caption">🗺 ルート：ザ・ウィンザーホテル洞爺 → 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
+        <iframe src="https://maps.google.com/maps?saddr=ザ・ウィンザーホテル洞爺&daddr=天然温泉鶴舞の湯ドーミーイン千歳&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">♨️ 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
+          <h3>デラックスツインルーム（禁煙・素泊り）1泊目</h3>
+          <div class="rows">
+            <div><span>予約番号</span><span>2026053129901554</span></div>
+            <div><span>宿泊者 / 予約者</span><span>樋口 忠生 様</span></div>
+            <div><span>チェックイン</span><span>14:00</span></div>
+            <div><span>人数・室数</span><span>大人2名・1室</span></div>
+            <div><span>TEL</span><span>0123-29-6050</span></div>
+          </div>
+          <div class="total"><span>1泊目 客室料金</span><span>11,250円 ×2名</span></div>
+        </div>
+      </div>
+
+      <div class="card ticket">
+        <div class="ticket-main">
+          <div class="tag">⚾ ES CON FIELD HOKKAIDO</div>
+          <h3>北海道日本ハムファイターズ <span class="vs">VS</span> 東北楽天ゴールデンイーグルス</h3>
+          <div class="info">
+            <div>開場予定 16:00 ／ 試合開始 18:00</div>
+            <div>受付番号 526070635343 ・ 購入日 2026年5月31日</div>
+          </div>
+          <div class="ticket-seats">
+            <div class="seat">STAR LEVEL 内野3塁側 Sec.332A 1列 1番</div>
+            <div class="seat">STAR LEVEL 内野3塁側 Sec.332A 1列 2番</div>
+            <div class="seat">おとな ¥7,200 ×2</div>
+          </div>
+        </div>
+        <div class="ticket-stub">ADMIT&nbsp;TWO</div>
+      </div>
+
+      <div class="drive-note"><div class="dot"></div>2台目レンタカーは同日 20:00 に新千歳空港ポプラ店へ返却予定</div>
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/25</div>
+      <div class="dow">金</div>
+      <div class="note">DAY 7</div>
+    </div>
+    <div class="cards">
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">♨️ 天然温泉 鶴舞の湯 ドーミーイン千歳</div>
+          <h3>デラックスツインルーム（禁煙・素泊り）2泊目</h3>
+          <div class="rows">
+            <div><span>プラン</span><span>大浴場×サウナでととのう ドーミーインスタンダード</span></div>
+            <div><span>人数・室数</span><span>大人2名・1室</span></div>
+          </div>
+          <div class="total"><span>2泊目 客室料金</span><span>11,700円 ×2名</span></div>
+        </div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>宿泊合計 45,900円（2泊・大人2名）／チェックアウト 9/26 11:00</div>
+    </div>
+  </div>
+
+  <!-- Day 8 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">9/26</div>
+      <div class="dow sat">土</div>
+      <div class="note">DAY 8 ・ 最終日</div>
+    </div>
+    <div class="cards">
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ NH1106 ・ ANA特典 ・ 国内特典エコノミー</div>
+          <div class="pass-route">
+            <div><div class="apt">CTS</div><div class="city">札幌 新千歳</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">HND</div><div class="city">東京 羽田</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>17:00</b></div>
+            <div><span>ARRIVAL</span><b>18:40</b></div>
+          </div>
+          <div class="pass-meta"><a href="https://www.ana.co.jp/other/int/meta/0811.html?CONNECTION_KIND=jp&LANG=j&BOOKING_TYPE=r&TIER_LEVEL=aid" target="_blank">特典予約詳細を見る ↗</a></div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">HND ✈ CTS ✈ SHB → KUH ✈ CTS → 洞爺湖 → CTS ✈ HND　｜　2026.09.19 – 09.26</div>
+
+</div>
+</body>
+</html>
