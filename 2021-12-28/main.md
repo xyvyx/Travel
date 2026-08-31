@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 熊本
 
@@ -12,4 +12,4 @@ layout: default
 ![alt text](PXL_20220102_020704179.jpg)
 ![alt text](PXL_20220102_042414437.jpg)
 
-[Index](../index.md)
+[Index](../)
