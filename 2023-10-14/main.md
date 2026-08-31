@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Index](../index.md)
 # 023-10-14　デイヴィッド・ホックニー 
 
