@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 群馬
 
 ## 岩櫃城
@@ -23,4 +23,4 @@ layout: default
 ![alt text](PXL_20250413_022508809.RAW-01.COVER_1.jpg)
 ![alt text](PXL_20250413_023724583.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
