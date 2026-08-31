@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 京都
 
@@ -12,4 +12,4 @@ layout: default
 
 ![alt text](PXL_20211120_023000104.jpg)
 
-[Index](../index.md)
+[Index](../)
