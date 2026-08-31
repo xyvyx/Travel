@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 三重
 
@@ -31,4 +31,4 @@ layout: default
 ![Alt text](PXL_20230321_032650129.jpg)
 
 
-[Index](../index.md)
+[Index](../)
