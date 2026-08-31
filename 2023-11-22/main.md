@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 甲府
 
 ## 南京町
@@ -33,4 +33,4 @@ layout: default
 ![Alt text](PXL_20231125_073326348.jpg)
 
 
-[Index](../index.md)
+[Index](../)
