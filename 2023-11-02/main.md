@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 熊谷
 
 
@@ -23,4 +23,4 @@ layout: default
 ![Alt text](PXL_20231102_053706956.MP.jpg)
 ![Alt text](PXL_20231102_053817721.jpg)
 
-[Index](../index.md)
+[Index](../)
