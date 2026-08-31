@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 豊島区立鈴木信太郎記念館
 
@@ -18,4 +18,4 @@ layout: default
 ## 蔵書の書棚
 ![alt text](PXL_20260801_020024164.RAW-01.MP.jpg)
 
-[Index](../index.md)
+[Index](../)
