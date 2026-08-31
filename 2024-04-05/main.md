@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 麻布台ヒルズ
 
 ## 麻布台ヒルズ
@@ -13,4 +13,4 @@ layout: default
 ![alt text](PXL_20240405_034616986.RAW-01.MP.COVER.jpg)
 ![alt text](PXL_20240405_034811897.RAW-01.MP.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
