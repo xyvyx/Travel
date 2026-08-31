@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 甲府
 
 ## 山中城
@@ -51,4 +51,4 @@ layout: default
 ![Alt text](PXL_20231105_025018656.jpg) 
 ![Alt text](PXL_20231105_033630057.jpg)
 
-[Index](../index.md)
+[Index](../)
