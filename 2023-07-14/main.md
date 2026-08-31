@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-[Index](../index.md)
+[Index](../)
 
 # 函館
 
@@ -36,4 +36,4 @@ layout: default
 ![Alt text](PXL_20230717_015959367.jpg)
 ![Alt text](PXL_20230717_031038480.jpg)
 
-[Index](../index.md)
+[Index](../)
