@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 敦賀
 
@@ -26,4 +26,4 @@ layout: default
 
 ![alt text](PXL_20251103_024736435.RAW-01.COVER_1-1.jpg)
 
-[Index](../index.md)
+[Index](../)
