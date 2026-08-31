@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 大分
 
 ## 宇佐神宮
@@ -38,4 +38,4 @@ layout: default
 
 
 
-[Index](../index.md)
+[Index](../)
