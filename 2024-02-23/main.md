@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 南房総
 
 
@@ -28,4 +28,4 @@ layout: default
 ![alt text](PXL_20240225_030302742.RAW-01.MP.COVER.jpg)
 
 
-[Index](../index.md)
+[Index](../)
