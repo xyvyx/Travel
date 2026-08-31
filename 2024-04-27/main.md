@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 秋田 青森
 
 ## 盛岡城
@@ -46,4 +46,4 @@ layout: default
 ## 弘前城
 ![text](PXL_20240502_025948985.RAW-01.MP.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
