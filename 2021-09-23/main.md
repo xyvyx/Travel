@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Index](../index.md)
 
 # 富士休暇村
