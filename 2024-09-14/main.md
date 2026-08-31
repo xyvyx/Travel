@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 
 # ホーチミン
@@ -16,4 +16,4 @@ layout: default
 ![alt text](PXL_20240920_055258237.RAW-01.COVER.jpg)
 
 
-[Index](../index.md)
+[Index](../)
