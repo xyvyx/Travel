@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Index](../index.md)
 
 # 成田山新勝寺
