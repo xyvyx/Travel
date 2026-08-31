@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 岩崎邸
 
@@ -13,4 +13,4 @@ layout: default
 ![Alt text](PXL_20230205_045412524.jpg)
 
 
-[Index](../index.md)
+[Index](../)
