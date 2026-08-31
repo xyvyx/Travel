@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 滋賀
 
@@ -22,5 +22,5 @@ layout: default
 ![代替テキスト](./PXL_20221122_062630746.jpg)
 
 
-[Index](../index.md)
+[Index](../)
 
