@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 
 # 鳥取城
@@ -58,4 +58,4 @@ layout: default
 # ベタ踏坂
 ![alt text](PXL_20240716_022427424.RAW-01.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
