@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 郡上八幡
 
 ## 苗木城
@@ -41,4 +41,4 @@ layout: default
 
 
 
-[Index](../index.md)
+[Index](../)
