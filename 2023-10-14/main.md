@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 023-10-14　デイヴィッド・ホックニー 
 
 
@@ -18,4 +18,4 @@ layout: default
 
 ![Alt text](PXL_20231014_042509592.jpg)
 
-[Index](../index.md)
+[Index](../)
