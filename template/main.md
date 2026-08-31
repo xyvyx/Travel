@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 上越妙高
 
 ## 上越妙高駅
@@ -11,4 +11,4 @@ layout: default
 
 
 
-[Index](../index.md)
+[Index](../)
