@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 村上城
 
@@ -19,4 +19,4 @@ layout: default
 ![alt text](PXL_20241104_030819711.RAW-01.COVER_1.jpg)
 ![alt text](PXL_20241104_022254453.RAW-01.COVER_1.jpg) 
 
-[Index](../index.md)
+[Index](../)
