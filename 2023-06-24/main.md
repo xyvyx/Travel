@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 上越妙高
 
@@ -32,4 +32,4 @@ layout: default
 ## 善光寺
 ![Alt text](PXL_20230626_045101442.jpg)
 
-[Index](../index.md)
+[Index](../)
