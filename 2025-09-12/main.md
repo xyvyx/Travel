@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 山形・仙台
 
@@ -49,4 +49,4 @@ layout: default
 ![text](PXL_20250916_042031156.RAW-01.COVER_1.jpg)
 ![text](PXL_20250916_042447985.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
