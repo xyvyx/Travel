@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 八戸
 
 ## 根城
@@ -27,4 +27,4 @@ layout: default
 ## 三戸城跡
 ![alt text](PXL_20250615_054940725.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
