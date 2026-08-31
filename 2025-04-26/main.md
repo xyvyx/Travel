@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 福井
 
 ## 丸岡城
@@ -35,4 +35,4 @@ layout: default
 
 # 富山
 
-[Index](../index.md)
+[Index](../)
