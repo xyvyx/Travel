@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # 旅行
 
 <div id="tr-search-wrap">
