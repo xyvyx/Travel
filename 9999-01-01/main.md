@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 現存12城
 
@@ -76,6 +76,6 @@ layout: default
 
 
 
-[Index](../index.md)
+[Index](../)
 
 
