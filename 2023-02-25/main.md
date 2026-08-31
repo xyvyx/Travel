@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 成田山新勝寺
 
@@ -10,4 +10,4 @@ layout: default
 ![Alt text](PXL_20230225_025313450.jpg)
 ![Alt text](PXL_20230225_033003434.jpg)
 
-[Index](../index.md)
+[Index](../)
