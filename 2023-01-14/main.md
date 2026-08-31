@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # ニューオータニ
 
@@ -12,4 +12,4 @@ layout: default
 ![代替テキスト](./PXL_20230114_042738969.jpg)
 ![代替テキスト](./PXL_20230114_043937747.jpg)
 
-[Index](../index.md)
+[Index](../)
