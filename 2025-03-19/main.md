@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Index](../index.md)
 # 広島・岡山
 
