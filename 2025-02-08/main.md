@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 和歌山
 
 ## 和歌山城
@@ -15,4 +15,4 @@ layout: default
 ![alt text](PXL_20250210_024009773.RAW-01.COVER_1.jpg)
 ![alt text](PXL_20250210_030148695.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
