@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 姫路
 
 
@@ -41,4 +41,4 @@ layout: default
 ![Alt text](PXL_20230918_023349455.jpg)
 
 
-[Index](../index.md)
+[Index](../)
