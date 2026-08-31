@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 引田城
 
@@ -36,4 +36,4 @@ layout: default
 ![text](PXL_20250103_020638918.RAW-01.COVER_1.jpg)
 ![text](PXL_20250103_025331177.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
