@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 岡山・広島
 ## 未来の丘
@@ -28,5 +28,5 @@ layout: default
 
 
 
-[Index](../index.md)
+[Index](../)
 
