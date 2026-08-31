@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # タイトル
 
@@ -18,4 +18,4 @@ layout: default
 ## 櫓内部
 ![alt text](PXL_20260606_064138918.RAW-01.jpg)
 
-[Index](../index.md)
+[Index](../)
