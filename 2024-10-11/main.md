@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 平戸
 
 ## 平戸城
@@ -16,4 +16,4 @@ layout: default
 
 ![test](https://storage.cloud.google.com/iogus/3b0f7ac2f346c822567de2cdcce41d8a.png)
 
-[Index](../index.md)
+[Index](../)
