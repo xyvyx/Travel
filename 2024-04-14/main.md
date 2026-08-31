@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 千葉
 
 ## 亥鼻城
@@ -10,4 +10,4 @@ layout: default
 ![alt text](PXL_20240414_040939716.RAW-01.MP.COVER.jpg)
 
 
-[Index](../index.md)
+[Index](../)
