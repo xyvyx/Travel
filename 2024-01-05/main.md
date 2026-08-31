@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 浜松
 
 ## 掛川城
@@ -46,4 +46,4 @@ layout: default
 ![Alt text](PXL_20240108_023443796.RAW-01.COVER.jpg)
 ![Alt text](PXL_20240108_024032321.RAW-01.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
