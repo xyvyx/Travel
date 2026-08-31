@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 軍艦クルーズ
 
@@ -24,4 +24,4 @@ layout: default
 
 ![text](PXL_20241208_031625131.RAW-01.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
