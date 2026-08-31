@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 旧大石家住宅
 
@@ -15,4 +15,4 @@ layout: default
 ## 内部
 ![alt text](PXL_20260628_052241195.RAW-01.jpg)
 
-[Index](../index.md)
+[Index](../)
