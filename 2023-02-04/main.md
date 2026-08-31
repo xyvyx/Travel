@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # クリスチャン・ディオール
 
@@ -10,4 +10,4 @@ layout: default
 ![Alt text](PXL_20230204_041619896.MP.jpg)
 ![Alt text](PXL_20230204_041703050.jpg)
 
-[Index](../index.md)
+[Index](../)
