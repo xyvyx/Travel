@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # タイトル
 
@@ -21,4 +21,4 @@ layout: default
 ## 調圧水槽(地下神殿)
 ![alt text](PXL_20260708_023257009.RAW-01.MP.jpg)
 
-[Index](../index.md)
+[Index](../)
