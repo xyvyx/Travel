@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 ## 佃島クルーズ
 
@@ -11,4 +11,4 @@ layout: default
 ![text](PXL_20241201_050428541.RAW-01.COVER.jpg)
 ![text](PXL_20241201_053257651.RAW-01.COVER~2.jpg)
 
-[Index](../index.md)
+[Index](../)
