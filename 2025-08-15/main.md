@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 黒部ダム
 
@@ -11,6 +11,6 @@ layout: default
   ![text](PXL_20250817_023021999.RAW-01.COVER_1.jpg) 
   ![text](PXL_20250817_025729797.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
 
 
