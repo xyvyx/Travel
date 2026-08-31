@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 沖縄キャンプ
 
@@ -31,4 +31,4 @@ layout: default
     ![alt text](PXL_20220219_095253721.jpg)
      ![alt text](PXL_20220220_055013439.jpg)
      
-[Index](../index.md)
+[Index](../)
