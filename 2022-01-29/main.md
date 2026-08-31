@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 高輪プリンス
 
@@ -21,4 +21,4 @@ layout: default
       ![text](PXL_20220129_035353967.jpg)
        ![text](PXL_20220129_041328048.jpg)
 
-[Index](../index.md)
+[Index](../)
