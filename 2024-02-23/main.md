@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 [Index](../index.md)
 # 南房総
 
