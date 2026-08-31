@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 広島・岡山
 
 ## 吉田郡山城
@@ -31,4 +31,4 @@ layout: default
 ![text](PXL_20250322_030721272.RAW-01.COVER_1.jpg)
 ![text](PXL_20250322_030903437.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
