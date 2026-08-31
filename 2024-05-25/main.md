@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 # 栃木 
 
 ## 金山城
@@ -19,4 +19,4 @@ layout: default
 ![alt text](PXL_20240526_025618989.RAW-01.MP.COVER.jpg)
 ![alt text](PXL_20240526_031843075.RAW-01.MP.COVER.jpg)
 
-[Index](../index.md)
+[Index](../)
