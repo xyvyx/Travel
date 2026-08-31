@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[Index](../index.md)
+[Index](../)
 
 # 山口
 
@@ -36,4 +36,4 @@ layout: default
 ![alt text](PXL_20250720_022628178.RAW-01.COVER_1.jpg)
 ![alt text](PXL_20250720_022918945.RAW-01.COVER_1.jpg)
 
-[Index](../index.md)
+[Index](../)
