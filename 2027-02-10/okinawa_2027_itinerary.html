@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>沖縄旅程 2027.2.10-2.17</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root{
+  --ink:#1B1B1B;
+  --ink-soft:#4A4A4A;
+  --paper:#FFFFFF;
+  --card:#FAFAF8;
+  --amber:#B8622E;
+  --sage:#1E7A76;
+  --rose:#A13A3A;
+  --line:#D8D5CC;
+  --line-soft:#E8E6DF;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans JP', sans-serif;
+  min-height:100vh;
+  padding:56px 16px 90px;
+}
+
+.wrap{max-width:760px;margin:0 auto;}
+
+/* ---------- Header ---------- */
+.hero{padding:0 4px 32px; border-bottom:2px solid var(--ink); margin-bottom:28px;}
+.hero .eyebrow{
+  font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+  color:var(--amber); text-transform:uppercase; margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:40px;
+  line-height:1.4; letter-spacing:.02em; color:var(--ink);
+}
+.hero h1 span{color:var(--amber); font-size:0.55em; display:block; margin-top:4px; font-weight:700;}
+.hero .route{
+  margin-top:18px; font-family:'JetBrains Mono',monospace; font-size:13px;
+  color:var(--ink-soft); letter-spacing:.05em;
+}
+.hero .dates{
+  margin-top:6px; font-size:14px; color:var(--ink-soft);
+}
+
+.notebox{
+  margin-bottom:44px; padding:16px 18px; background:var(--card); border:1px solid var(--line);
+  border-left:5px solid var(--amber); border-radius:8px; font-size:12.5px; color:var(--ink-soft); line-height:1.8;
+}
+.notebox b{color:var(--ink);}
+
+/* ---------- Day marker ---------- */
+.day{margin-bottom:46px; position:relative;}
+.day-head{
+  display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+  padding-left:2px; border-bottom:1px solid var(--line); padding-bottom:10px;
+}
+.day-head .num{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:30px; color:var(--ink);
+  min-width:78px;
+}
+.day-head .dow{
+  font-size:13px; padding:3px 10px; border-radius:20px; letter-spacing:.05em;
+  border:1px solid var(--ink); color:var(--ink);
+}
+.day-head .dow.sat{border-color:var(--sage); color:var(--sage);}
+.day-head .dow.sun{border-color:var(--rose); color:var(--rose);}
+.day-head .note{margin-left:auto; font-size:12px; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+
+.cards{display:flex; flex-direction:column; gap:16px;}
+
+/* ---------- Base card ---------- */
+.card{
+  border-radius:10px; position:relative; overflow:hidden;
+  background:var(--card); border:1px solid var(--line);
+}
+.card-inner{padding:20px 22px;}
+.tag{
+  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; font-weight:700; display:flex; align-items:center; gap:6px;
+}
+
+/* ---------- Boarding pass (flight) ---------- */
+.pass{
+  background:var(--card);
+  border:1px solid var(--ink);
+  border-left:5px solid var(--amber);
+  display:flex;
+}
+.pass-main{flex:1; padding:20px 22px;}
+.pass-main .tag{color:var(--amber);}
+.pass-route{
+  display:flex; align-items:center; gap:14px; margin-top:12px;
+}
+.pass-route .apt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:26px; color:var(--ink);}
+.pass-route .city{font-size:11px; color:var(--ink-soft); margin-top:2px;}
+.pass-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:40px;}
+.pass-route .arrow::after{content:'✈';position:absolute; right:0; top:-9px; font-size:14px; color:var(--amber);}
+.pass-times{display:flex; gap:26px; margin-top:14px; font-family:'JetBrains Mono',monospace;}
+.pass-times div span{display:block; font-size:10px; color:var(--ink-soft);}
+.pass-times div b{font-size:20px; color:var(--ink);}
+.pass-meta{
+  margin-top:14px; font-size:12px; color:var(--ink-soft); display:flex; gap:10px; flex-wrap:wrap;
+}
+.pass-meta a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber);}
+.pass-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Car voucher ---------- */
+.voucher{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage);}
+.voucher .tag{color:var(--sage); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.voucher .tag a{color:var(--sage); text-decoration:none; border-bottom:1px dotted var(--sage); font-size:11px; white-space:nowrap;}
+.voucher h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
+.voucher .grid{
+  display:grid; grid-template-columns:1fr 1fr; gap:10px 20px; margin-top:14px; font-size:13px; color:var(--ink);
+}
+.voucher .grid div span{display:block; font-size:11px; color:var(--ink-soft);}
+.voucher .price{
+  margin-top:16px; padding-top:14px; border-top:1px dashed var(--line);
+  display:flex; justify-content:space-between; align-items:baseline;
+}
+.voucher .price b{font-family:'JetBrains Mono',monospace; font-size:22px; color:var(--sage);}
+
+/* ---------- Hotel key ---------- */
+.hotel{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--amber);}
+.hotel .tag{color:var(--amber); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.hotel .tag a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber); font-size:11px; white-space:nowrap;}
+.hotel .hotel-name{font-family:'Shippori Mincho',serif; font-size:25px; font-weight:800; margin-top:10px; color:var(--ink); line-height:1.4;}
+.hotel .hotel-plan{font-size:12.5px; color:var(--ink-soft); margin-top:4px; line-height:1.6;}
+.hotel h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
+.hotel .rows{margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:13px;}
+.hotel .rows div{display:flex; justify-content:space-between; color:var(--ink);}
+.hotel .rows div span:first-child{color:var(--ink-soft);}
+.hotel .total{
+  margin-top:14px; padding-top:12px; border-top:1px dashed var(--line);
+  display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--amber);
+}
+
+/* ---------- Ticket stub (baseball) ---------- */
+.ticket{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--rose); display:flex;}
+.ticket-main{flex:1; padding:20px 22px;}
+.ticket-main .tag{color:var(--rose);}
+.ticket-main h3{font-family:'Shippori Mincho',serif; font-size:19px; margin-top:8px; line-height:1.5; color:var(--ink);}
+.ticket-main .vs{color:var(--rose); font-weight:700;}
+.ticket-main .info{margin-top:12px; font-size:13px; color:var(--ink-soft); display:flex; flex-direction:column; gap:4px;}
+.ticket-seats{margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;}
+.seat{
+  font-family:'JetBrains Mono',monospace; font-size:12px; padding:6px 10px; border-radius:8px;
+  background:var(--line-soft); border:1px solid var(--line); color:var(--ink);
+}
+.ticket-stub{
+  width:64px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:11px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- drive note ---------- */
+.drive-note{
+  display:flex; align-items:flex-start; gap:10px; font-size:13px; color:var(--ink-soft);
+  padding:2px 4px 2px 8px; font-family:'JetBrains Mono',monospace; line-height:1.7;
+}
+.drive-note .dot{width:6px;height:6px;border-radius:50%;background:var(--sage); margin-top:7px; flex-shrink:0;}
+.drive-note.baseball .dot{background:var(--rose);}
+.drive-note b{color:var(--ink); font-family:'Noto Sans JP',sans-serif;}
+
+/* ---------- footer ---------- */
+.footer{
+  margin-top:60px; padding-top:24px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--ink-soft); text-align:center; letter-spacing:.05em;
+}
+
+@media(max-width:520px){
+  body{padding:32px 12px 70px;}
+  .hero h1{font-size:26px;}
+  .hero .eyebrow{font-size:11px; letter-spacing:.2em;}
+  .hero .route{font-size:11.5px;}
+
+  .day-head .num{font-size:24px; min-width:60px;}
+  .day-head .note{font-size:10.5px;}
+
+  .card-inner, .pass-main, .ticket-main{padding:16px 16px;}
+
+  .pass, .ticket{flex-direction:column;}
+  .pass-stub, .ticket-stub{
+    width:100%; height:30px; writing-mode:horizontal-tb; border-left:0;
+    border-top:2px dashed var(--line); letter-spacing:.15em; font-size:11px;
+  }
+
+  .pass-route{gap:8px;}
+  .pass-route .apt{font-size:21px;}
+  .pass-times{gap:18px;}
+  .pass-times div b{font-size:17px;}
+
+  .voucher .grid{grid-template-columns:1fr;}
+  .hotel .hotel-name{font-size:20px;}
+  .hotel .tag, .voucher .tag{flex-wrap:wrap;}
+
+  .ticket-seats{gap:6px;}
+  .seat{font-size:11px; padding:5px 8px;}
+}
+
+@media(max-width:360px){
+  .hero h1{font-size:22px;}
+  .day-head .num{font-size:20px; min-width:50px;}
+}
+
+@media print{
+  body{padding:12px 8px;}
+  .card{break-inside:avoid;}
+  .day{break-inside:avoid;}
+  a{color:inherit; text-decoration:underline;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Itinerary</div>
+    <h1>沖縄 8日間<span>プロ野球春季キャンプ×北谷・那覇</span></h1>
+    <div class="route">東京(羽田) ⇄ 沖縄(那覇) ・ 恩納村（カフーリゾートフチャク）4泊 ・ 那覇（東急ステイ）3泊</div>
+    <div class="dates">2027年2月10日（水） —— 2月17日（水）　パートナー・友人と2名</div>
+  </div>
+
+  <div class="notebox">
+    <b>この旅程について：</b>プロ野球春季キャンプの見学プランは、2027年分の公式日程が未発表（例年12月〜1月頃発表）のため、<b>2026年の実績日程</b>を参考に組んでいます。出発前に必ず各球団公式サイト・観光協会サイトで最新の日程・休養日・練習試合開催（有料の場合あり）・駐車場情報をご確認ください。前半の宿泊は<b>恩納村</b>（北谷より少し北）のため、北谷・沖縄市の各キャンプ地までは車で約30〜40分が目安です。レンタカーは予約前提で記載しています。
+  </div>
+
+  <!-- ============ DAY 1 : 2/10 水 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/10</div>
+      <div class="dow">水</div>
+      <div class="note">DAY 1 ・ 那覇着 → 北谷</div>
+    </div>
+    <div class="cards">
+
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ JAL913便</div>
+          <div class="pass-route">
+            <div><div class="apt">HND</div><div class="city">東京（羽田）</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">OKA</div><div class="city">沖縄（那覇）</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>10:30</b></div>
+            <div><span>ARRIVAL</span><b>13:30</b></div>
+          </div>
+          <div class="pass-meta"><a href="https://www.jal.co.jp/jp/ja/guidance/adp/dom/reservation-confirm/" target="_blank">JALで予約を確認 ↗</a></div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+      <div class="drive-note"><div class="dot"></div>那覇空港でレンタカーを受け取り（予約手配は別途）</div>
+      <div class="drive-note"><div class="dot"></div>恩納村へ移動（空港から車で約60〜70分）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://www.kafuu-okinawa.jp/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">カフーリゾートフチャク コンド・ホテル</div>
+          <div class="hotel-plan">【早期割120】早期ご予約プラン～寛ぎのカフーステイ（お部屋のみ）／1泊目</div>
+          <div class="rows">
+            <div><span>所在地</span><span>沖縄県国頭郡恩納村字冨着志利福地原246-1</span></div>
+            <div><span>TEL</span><span>098-964-7000</span></div>
+            <div><span>チェックイン</span><span>15:00〜</span></div>
+            <div><span>部屋タイプ</span><span>アネックス棟 スイート（2〜4名）68〜79㎡</span></div>
+            <div><span>宿泊料金</span><span>31,040円（大人2名）</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drive-note"><div class="dot"></div>ホテルはビーチ目の前。夕方は車ですぐの<b>万座毛</b>で夕日鑑賞、館内やビーチ沿いで夕食</div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 2 : 2/11 木 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/11</div>
+      <div class="dow">木</div>
+      <div class="note">DAY 2 ・ 北谷</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note baseball"><div class="dot"></div><b>中日ドラゴンズ春季キャンプ見学</b>（Agreスタジアム北谷／2026年実績：2/1〜2/24開催・見学無料／恩納村から車で約30〜40分）※北谷公園駐車場を利用</div>
+      <div class="drive-note"><div class="dot"></div>ついでに北谷・美浜アメリカンビレッジで昼食＆散策（ステーキ・タコライスなど）</div>
+      <div class="drive-note"><div class="dot"></div>夕方は恩納村に戻ってホテル周辺で自由時間</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span></div>
+          <div class="hotel-name">カフーリゾートフチャク コンド・ホテル</div>
+          <div class="hotel-plan">2泊目</div>
+          <div class="rows">
+            <div><span>部屋タイプ</span><span>アネックス棟 スイート（2〜4名）68〜79㎡</span></div>
+            <div><span>宿泊料金</span><span>32,610円（大人2名）</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 3 : 2/12 金 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/12</div>
+      <div class="dow">金</div>
+      <div class="note">DAY 3 ・ 読谷・中部ドライブ</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>ホテルからほど近い読谷方面へドライブ：座喜味城跡（世界遺産）・残波岬</div>
+      <div class="drive-note"><div class="dot"></div>道の駅かでな に立ち寄り</div>
+      <div class="drive-note baseball"><div class="dot"></div>（お好みで）<b>ヤクルトスワローズ春季キャンプ見学</b>（ANA BALL PARK 浦添／2026年実績：2/1〜2/26・恩納村から車で約40〜50分）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span></div>
+          <div class="hotel-name">カフーリゾートフチャク コンド・ホテル</div>
+          <div class="hotel-plan">3泊目</div>
+          <div class="rows">
+            <div><span>部屋タイプ</span><span>アネックス棟 スイート（2〜4名）68〜79㎡</span></div>
+            <div><span>宿泊料金</span><span>35,870円（大人2名）</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 4 : 2/13 土 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/13</div>
+      <div class="dow sat">土</div>
+      <div class="note">DAY 4 ・ 北谷でゆったり</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>中日ドラゴンズは2026年実績で本日が休養日。ホテル周辺でのんびり過ごす日に</div>
+      <div class="drive-note baseball"><div class="dot"></div>（お好みで）<b>横浜DeNAベイスターズ2軍キャンプ見学</b>（嘉手納町野球場／2026年実績：2/1〜2/22・恩納村から車で約35分）</div>
+      <div class="drive-note"><div class="dot"></div>ホテルのビーチ・プールでのんびり、または美浜アメリカンビレッジの観覧車・雑貨店・カフェ巡り</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span></div>
+          <div class="hotel-name">カフーリゾートフチャク コンド・ホテル</div>
+          <div class="hotel-plan">4泊目（最終泊）</div>
+          <div class="rows">
+            <div><span>部屋タイプ</span><span>アネックス棟 スイート（2〜4名）68〜79㎡</span></div>
+            <div><span>宿泊料金</span><span>35,870円（大人2名）</span></div>
+            <div><span>チェックアウト</span><span>11:00まで</span></div>
+            <div><span>宿泊料金合計（4泊）</span><span>135,390円（サービス料・税込）</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 5 : 2/14 日 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/14</div>
+      <div class="dow sun">日</div>
+      <div class="note">DAY 5 ・ 北谷 → 那覇</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>チェックアウト（11:00まで）、恩納村を出発</div>
+      <div class="drive-note baseball"><div class="dot"></div><b>広島東洋カープ春季キャンプ・見学初日</b>（コザしんきんスタジアム／沖縄市／2026年実績：本日2/14が開幕日・恩納村から車で約35分、那覇への道中に立ち寄り可）</div>
+      <div class="drive-note"><div class="dot"></div>那覇へ移動（そこから車で約30分）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://www.tokyustay.co.jp/hotel/ON/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">東急ステイ沖縄那覇</div>
+          <div class="hotel-plan">1泊目／2027-02-14〜15</div>
+          <div class="rows">
+            <div><span>所在地</span><span>沖縄県那覇市壺川3-2-1</span></div>
+            <div><span>TEL</span><span>098-833-1090</span></div>
+            <div><span>アクセス</span><span>ゆいレール壺川駅から徒歩3分</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="drive-note baseball"><div class="dot"></div><b>読売ジャイアンツ春季キャンプ・見学初日</b>（沖縄セルラースタジアム那覇／奥武山公園内／2026年実績：本日2/14が開幕日・ホテルから車で約10分）</div>
+      <div class="drive-note"><div class="dot"></div>夜は国際通りで食事・散策</div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 6 : 2/15 月 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/15</div>
+      <div class="dow">月</div>
+      <div class="note">DAY 6 ・ 那覇観光</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>首里城公園を観光（正殿は2026年11月23日より一般公開再開）</div>
+      <div class="drive-note baseball"><div class="dot"></div><b>読売ジャイアンツ春季キャンプ見学</b>（沖縄セルラースタジアム那覇）</div>
+      <div class="drive-note"><div class="dot"></div>壺屋やちむん通り・第一牧志公設市場を散策</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://www.tokyustay.co.jp/hotel/ON/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">東急ステイ沖縄那覇</div>
+          <div class="hotel-plan">2泊目／2027-02-15〜16</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 7 : 2/16 火 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/16</div>
+      <div class="dow">火</div>
+      <div class="note">DAY 7 ・ 南部日帰り</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>レンタカーで沖縄本島南部へドライブ</div>
+      <div class="drive-note baseball"><div class="dot"></div>（お好みで）<b>千葉ロッテマリーンズ春季キャンプ見学</b>（西崎運動公園西崎球場／糸満市／2026年実績：2/13〜2/23・那覇から車で約30分）</div>
+      <div class="drive-note"><div class="dot"></div>平和祈念公園・ひめゆりの塔で沖縄戦の歴史にふれる</div>
+      <div class="drive-note"><div class="dot"></div>豊崎美らSUNビーチなど、時間があれば寄り道</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://www.tokyustay.co.jp/hotel/ON/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">東急ステイ沖縄那覇</div>
+          <div class="hotel-plan">3泊目（最終泊）／2027-02-16〜17</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 8 : 2/17 水 ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">2/17</div>
+      <div class="dow">水</div>
+      <div class="note">DAY 8 ・ 帰京</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>チェックアウト、レンタカーを那覇空港で返却</div>
+
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ JAL912便</div>
+          <div class="pass-route">
+            <div><div class="apt">OKA</div><div class="city">沖縄（那覇）</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">HND</div><div class="city">東京（羽田）</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>14:15</b></div>
+            <div><span>ARRIVAL</span><b>16:30</b></div>
+          </div>
+          <div class="pass-meta"><a href="https://www.jal.co.jp/jp/ja/guidance/adp/dom/reservation-confirm/" target="_blank">JALで予約を確認 ↗</a></div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">東京(羽田) → 恩納村 → 那覇 → 東京(羽田)　｜　2027.02.10 – 02.17　｜　宿泊費：カフーリゾートフチャク 135,390円（4泊）＋東急ステイ沖縄那覇分（別途）　｜　フライト・パッケージ代金は別途ご確認ください</div>
+
+</div>
+</body>
+</html>
