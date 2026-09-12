@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宮古島・伊良部島 旅程 2026.12.26-12.30</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root{
+  --ink:#17242B;
+  --ink-soft:#54646C;
+  --paper:#FFFFFF;
+  --card:#F6FAFA;
+  --amber:#C97B39;
+  --sage:#0E7C86;
+  --rose:#B24B4B;
+  --line:#D6E0E1;
+  --line-soft:#E9F1F1;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans JP', sans-serif;
+  min-height:100vh;
+  padding:56px 16px 90px;
+}
+
+.wrap{max-width:760px;margin:0 auto;}
+
+/* ---------- Header ---------- */
+.hero{padding:0 4px 32px; border-bottom:2px solid var(--ink); margin-bottom:44px;}
+.hero .eyebrow{
+  font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+  color:var(--sage); text-transform:uppercase; margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:44px;
+  line-height:1.35; letter-spacing:.02em; color:var(--ink);
+}
+.hero h1 span{color:var(--amber);}
+.hero .route{
+  margin-top:18px; font-family:'JetBrains Mono',monospace; font-size:13px;
+  color:var(--ink-soft); letter-spacing:.05em;
+}
+.hero .dates{
+  margin-top:6px; font-size:14px; color:var(--ink-soft);
+}
+
+/* ---------- Day marker ---------- */
+.day{margin-bottom:46px; position:relative;}
+.day-head{
+  display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+  padding-left:2px; border-bottom:1px solid var(--line); padding-bottom:10px;
+}
+.day-head .num{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:30px; color:var(--ink);
+  min-width:78px;
+}
+.day-head .dow{
+  font-size:13px; padding:3px 10px; border-radius:20px; letter-spacing:.05em;
+  border:1px solid var(--ink); color:var(--ink);
+}
+.day-head .dow.sat{border-color:var(--sage); color:var(--sage);}
+.day-head .dow.sun{border-color:var(--rose); color:var(--rose);}
+.day-head .note{margin-left:auto; font-size:12px; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+
+.cards{display:flex; flex-direction:column; gap:16px;}
+
+/* ---------- Base card ---------- */
+.card{
+  border-radius:10px; position:relative; overflow:hidden;
+  background:var(--card); border:1px solid var(--line);
+}
+.card-inner{padding:20px 22px;}
+.tag{
+  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; font-weight:700; display:flex; align-items:center; gap:6px;
+}
+
+/* ---------- Boarding pass (flight) ---------- */
+.pass{
+  background:var(--card);
+  border:1px solid var(--ink);
+  border-left:5px solid var(--amber);
+  display:flex;
+}
+.pass-main{flex:1; padding:20px 22px;}
+.pass-main .tag{color:var(--amber);}
+.pass-route{
+  display:flex; align-items:center; gap:14px; margin-top:12px;
+}
+.pass-route .apt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:26px; color:var(--ink);}
+.pass-route .city{font-size:11px; color:var(--ink-soft); margin-top:2px;}
+.pass-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:40px;}
+.pass-route .arrow::after{content:'✈';position:absolute; right:0; top:-9px; font-size:14px; color:var(--amber);}
+.pass-times{display:flex; gap:26px; margin-top:14px; font-family:'JetBrains Mono',monospace;}
+.pass-times div span{display:block; font-size:10px; color:var(--ink-soft);}
+.pass-times div b{font-size:20px; color:var(--ink);}
+.pass-meta{
+  margin-top:14px; font-size:12px; color:var(--ink-soft); display:flex; gap:10px; flex-wrap:wrap;
+}
+.pass-meta a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber);}
+.pass-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Hotel key ---------- */
+.hotel{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--amber);}
+.hotel .tag{color:var(--amber); display:flex; align-items:center; justify-content:space-between; gap:8px;}
+.hotel .tag a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber); font-size:11px; white-space:nowrap;}
+.hotel .hotel-name{font-family:'Shippori Mincho',serif; font-size:25px; font-weight:800; margin-top:10px; color:var(--ink); line-height:1.4;}
+.hotel .hotel-plan{font-size:12.5px; color:var(--ink-soft); margin-top:4px; line-height:1.6;}
+.hotel .rows{margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:13px;}
+.hotel .rows div{display:flex; justify-content:space-between; gap:16px; color:var(--ink);}
+.hotel .rows div span:first-child{color:var(--ink-soft); white-space:nowrap;}
+.hotel .rows div span:last-child{text-align:right;}
+
+/* ---------- drive note ---------- */
+.drive-note{
+  display:flex; align-items:center; gap:10px; font-size:13px; color:var(--ink-soft);
+  padding:2px 4px 2px 8px; font-family:'JetBrains Mono',monospace;
+}
+.drive-note .dot{width:6px;height:6px;border-radius:50%;background:var(--sage);}
+
+/* ---------- footer ---------- */
+.footer{
+  margin-top:60px; padding-top:24px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--ink-soft); text-align:center; letter-spacing:.05em;
+}
+
+@media(max-width:520px){
+  body{padding:32px 12px 70px;}
+  .hero h1{font-size:28px;}
+  .hero .eyebrow{font-size:11px; letter-spacing:.2em;}
+  .hero .route{font-size:11.5px;}
+
+  .day-head .num{font-size:24px; min-width:60px;}
+  .day-head .note{font-size:10.5px;}
+
+  .card-inner, .pass-main{padding:16px 16px;}
+
+  .pass{flex-direction:column;}
+  .pass-stub{
+    width:100%; height:30px; writing-mode:horizontal-tb; border-left:0;
+    border-top:2px dashed var(--line); letter-spacing:.15em; font-size:11px;
+  }
+
+  .pass-route{gap:8px;}
+  .pass-route .apt{font-size:21px;}
+  .pass-times{gap:18px;}
+  .pass-times div b{font-size:17px;}
+
+  .hotel .hotel-name{font-size:20px;}
+  .hotel .tag{flex-wrap:wrap;}
+}
+
+@media(max-width:360px){
+  .hero h1{font-size:24px;}
+  .day-head .num{font-size:20px; min-width:50px;}
+}
+
+@media print{
+  body{padding:12px 8px;}
+  .card{break-inside:avoid;}
+  .day{break-inside:avoid;}
+  a{color:inherit; text-decoration:underline;}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Itinerary</div>
+    <h1>宮古島<span>・伊良部島</span></h1>
+    <div class="route">羽田(HND) ⇄ 宮古(MMY) ・ 伊良部島 ウォーターマークホテル沖縄 宮古島</div>
+    <div class="dates">2026年12月26日（土） —— 12月30日（水）・ 4泊5日</div>
+  </div>
+
+  <!-- ============ DAY 1 : 12/26（土） ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">12/26</div>
+      <div class="dow sat">土</div>
+      <div class="note">DAY 1</div>
+    </div>
+    <div class="cards">
+
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ JAL933便</div>
+          <div class="pass-route">
+            <div><div class="apt">HND</div><div class="city">東京（羽田）</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">MMY</div><div class="city">宮古</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>10:45</b></div>
+            <div><span>ARRIVAL</span><b>14:10</b></div>
+          </div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+      <div class="drive-note"><div class="dot"></div>宮古空港からホテルへ車で移動（伊良部大橋経由・目安約35分）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://watermark-hotels.com/miyakojima/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ウォーターマークホテル沖縄 宮古島</div>
+          <div class="hotel-plan">伊良部島 ・ 1泊目</div>
+          <div class="rows">
+            <div><span>所在地</span><span>沖縄県宮古島市伊良部佐和田前原1725</span></div>
+            <div><span>TEL</span><span>0980-78-5100</span></div>
+            <div><span>最寄り空港</span><span>下地島空港から車で約5分</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 2 : 12/27（日） ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">12/27</div>
+      <div class="dow sun">日</div>
+      <div class="note">DAY 2</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>自由行動（伊良部島・宮古島観光など／予定未定）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://watermark-hotels.com/miyakojima/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ウォーターマークホテル沖縄 宮古島</div>
+          <div class="hotel-plan">伊良部島 ・ 2泊目</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 3 : 12/28（月） ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">12/28</div>
+      <div class="dow">月</div>
+      <div class="note">DAY 3</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>自由行動（予定未定）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://watermark-hotels.com/miyakojima/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ウォーターマークホテル沖縄 宮古島</div>
+          <div class="hotel-plan">伊良部島 ・ 3泊目</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 4 : 12/29（火） ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">12/29</div>
+      <div class="dow">火</div>
+      <div class="note">DAY 4</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>自由行動（予定未定）</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag"><span>🏨 HOTEL</span><a href="https://watermark-hotels.com/miyakojima/" target="_blank">公式サイト ↗</a></div>
+          <div class="hotel-name">ウォーターマークホテル沖縄 宮古島</div>
+          <div class="hotel-plan">伊良部島 ・ 4泊目</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============ DAY 5 : 12/30（水） ============ -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">12/30</div>
+      <div class="dow">水</div>
+      <div class="note">DAY 5</div>
+    </div>
+    <div class="cards">
+
+      <div class="drive-note"><div class="dot"></div>ホテルをチェックアウトし宮古空港へ車で移動</div>
+
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ JAL934便</div>
+          <div class="pass-route">
+            <div><div class="apt">MMY</div><div class="city">宮古</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">HND</div><div class="city">東京（羽田）</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>14:55</b></div>
+            <div><span>ARRIVAL</span><b>17:30</b></div>
+          </div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="footer">羽田 → 宮古（伊良部島） → 羽田　｜　2026.12.26 – 12.30</div>
+
+</div>
+</body>
+</html>

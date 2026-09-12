@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>小松・金沢紀行</title>
+</head>
+<body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700;900&family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root{
+  --ink:#1B1B1B;
+  --ink-soft:#4A4A4A;
+  --paper:#FFFFFF;
+  --card:#FAFAF8;
+  --amber:#8A5A12;
+  --sage:#3F5C46;
+  --rose:#8A3E3E;
+  --line:#D8D5CC;
+  --line-soft:#E8E6DF;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Noto Sans JP', sans-serif;
+  min-height:100vh;
+  padding:56px 16px 90px;
+}
+
+.wrap{max-width:760px;margin:0 auto;}
+
+/* ---------- Header ---------- */
+.hero{padding:0 4px 32px; border-bottom:2px solid var(--ink); margin-bottom:44px;}
+.hero .eyebrow{
+  font-family:'JetBrains Mono',monospace; font-size:12px; letter-spacing:.28em;
+  color:var(--amber); text-transform:uppercase; margin-bottom:14px;
+}
+.hero h1{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:44px;
+  line-height:1.35; letter-spacing:.02em; color:var(--ink);
+}
+.hero h1 span{color:var(--amber);}
+.hero .route{
+  margin-top:18px; font-family:'JetBrains Mono',monospace; font-size:13px;
+  color:var(--ink-soft); letter-spacing:.05em;
+}
+.hero .dates{
+  margin-top:6px; font-size:14px; color:var(--ink-soft);
+}
+
+/* ---------- Day marker ---------- */
+.day{margin-bottom:46px; position:relative;}
+.day-head{
+  display:flex; align-items:baseline; gap:14px; margin-bottom:18px;
+  padding-left:2px; border-bottom:1px solid var(--line); padding-bottom:10px;
+}
+.day-head .num{
+  font-family:'Shippori Mincho',serif; font-weight:800; font-size:30px; color:var(--ink);
+  min-width:78px;
+}
+.day-head .dow{
+  font-size:13px; padding:3px 10px; border-radius:20px; letter-spacing:.05em;
+  border:1px solid var(--ink); color:var(--ink);
+}
+.day-head .dow.sat{border-color:var(--sage); color:var(--sage);}
+.day-head .dow.sun{border-color:var(--rose); color:var(--rose);}
+.day-head .note{margin-left:auto; font-size:12px; color:var(--ink-soft); font-family:'JetBrains Mono',monospace;}
+
+.cards{display:flex; flex-direction:column; gap:16px;}
+
+/* ---------- Base card ---------- */
+.card{
+  border-radius:10px; position:relative; overflow:hidden;
+  background:var(--card); border:1px solid var(--line);
+}
+.card-inner{padding:20px 22px;}
+.tag{
+  font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:.16em;
+  text-transform:uppercase; font-weight:700; display:flex; align-items:center; gap:6px;
+}
+
+/* ---------- Boarding pass (flight) ---------- */
+.pass{
+  background:var(--card);
+  border:1px solid var(--ink);
+  border-left:5px solid var(--amber);
+  display:flex;
+}
+.pass-main{flex:1; padding:20px 22px;}
+.pass-main .tag{color:var(--amber);}
+.pass-route{
+  display:flex; align-items:center; gap:14px; margin-top:12px;
+}
+.pass-route .apt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:26px; color:var(--ink);}
+.pass-route .city{font-size:11px; color:var(--ink-soft); margin-top:2px;}
+.pass-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:40px;}
+.pass-route .arrow::after{content:'✈';position:absolute; right:0; top:-9px; font-size:14px; color:var(--amber);}
+.pass-times{display:flex; gap:26px; margin-top:14px; font-family:'JetBrains Mono',monospace;}
+.pass-times div span{display:block; font-size:10px; color:var(--ink-soft);}
+.pass-times div b{font-size:20px; color:var(--ink);}
+.pass-meta{
+  margin-top:14px; font-size:12px; color:var(--ink-soft); display:flex; gap:10px; flex-wrap:wrap;
+}
+.pass-meta a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber);}
+.pass-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Surface ticket (train) ---------- */
+.bus{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage); display:flex;}
+.bus-main{flex:1; padding:20px 22px;}
+.bus-main .tag{color:var(--sage);}
+.bus-route{display:flex; align-items:center; gap:14px; margin-top:12px;}
+.bus-route .apt{font-family:'Shippori Mincho',serif; font-weight:700; font-size:24px; color:var(--ink);}
+.bus-route .city{font-size:11px; color:var(--ink-soft); margin-top:2px;}
+.bus-route .arrow{flex:1; position:relative; height:1px; background:var(--line); min-width:40px;}
+.bus-route .arrow::after{content:'▶';position:absolute; right:0; top:-7px; font-size:11px; color:var(--sage);}
+.bus-meta{margin-top:14px; font-size:12px; color:var(--ink-soft); display:flex; gap:10px; flex-wrap:wrap;}
+.bus-stub{
+  width:78px; border-left:2px dashed var(--line);
+  display:flex; align-items:center; justify-content:center;
+  writing-mode:vertical-rl; font-family:'JetBrains Mono',monospace; font-size:12px;
+  letter-spacing:.2em; color:var(--ink-soft); background:var(--line-soft);
+}
+
+/* ---------- Hotel key ---------- */
+.hotel{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--amber);}
+.hotel .tag{color:var(--amber);}
+.hotel .tag a{color:var(--amber); text-decoration:none; border-bottom:1px dotted var(--amber); text-transform:none; letter-spacing:0; font-weight:500;}
+.hotel h3{font-family:'Shippori Mincho',serif; font-size:20px; margin-top:8px; color:var(--ink);}
+.hotel .plan{font-size:12px; color:var(--ink-soft); margin-top:4px;}
+.hotel .rows{margin-top:14px; display:flex; flex-direction:column; gap:8px; font-size:13px;}
+.hotel .rows div{display:flex; justify-content:space-between; color:var(--ink);}
+.hotel .rows div span:first-child{color:var(--ink-soft);}
+.hotel .total{
+  margin-top:14px; padding-top:12px; border-top:1px dashed var(--line);
+  display:flex; justify-content:space-between; font-family:'JetBrains Mono',monospace; font-size:18px; color:var(--amber);
+}
+
+/* ---------- Sightseeing spot ---------- */
+.spot{background:var(--card); border:1px solid var(--ink); border-left:5px solid var(--sage);}
+.spot .tag{color:var(--sage);}
+.spot .tag a{color:var(--sage); text-decoration:none; border-bottom:1px dotted var(--sage); text-transform:none; letter-spacing:0; font-weight:500;}
+.spot .place{font-family:'Shippori Mincho',serif; font-size:19px; margin-top:8px; color:var(--ink);}
+.spot .desc{font-size:12px; color:var(--ink-soft); margin-top:4px;}
+
+/* ---------- drive note ---------- */
+.drive-note{
+  display:flex; align-items:center; gap:10px; font-size:13px; color:var(--ink-soft);
+  padding:2px 4px 2px 8px; font-family:'JetBrains Mono',monospace;
+}
+.drive-note .dot{width:6px;height:6px;border-radius:50%;background:var(--sage); flex:none;}
+
+/* ---------- footer ---------- */
+.footer{
+  margin-top:60px; padding-top:24px; border-top:1px solid var(--line);
+  font-size:12px; color:var(--ink-soft); text-align:center; letter-spacing:.05em;
+}
+
+@media(max-width:520px){
+  .hero h1{font-size:32px;}
+  .pass-times{gap:16px;}
+}
+
+@media print{
+  body{padding:12px 8px;}
+  .card{break-inside:avoid;}
+  .day{break-inside:avoid;}
+  a{color:inherit; text-decoration:underline;}
+}
+</style>
+<div class="wrap">
+
+  <div class="hero">
+    <div class="eyebrow">Itinerary</div>
+    <h1>小松<span>・</span>金沢紀行</h1>
+    <div class="route">HND ⇄ KMQ ・ こまつの杜 ・ 日本自動車博物館 ・ 那谷寺 ・ 鳥越城跡 ・ 金沢駅西口（泊）</div>
+    <div class="dates">2026年10月10日（土）—— 10月12日（月）</div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">10/10</div>
+      <div class="dow sat">土</div>
+      <div class="note">DAY 1</div>
+    </div>
+    <div class="cards">
+      <div class="card pass">
+        <div class="pass-main">
+          <div class="tag">✈ JAL185 ・ JTA運航 ・ 普通席</div>
+          <div class="pass-route">
+            <div><div class="apt">HND</div><div class="city">東京 羽田</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">KMQ</div><div class="city">小松</div></div>
+          </div>
+          <div class="pass-times">
+            <div><span>DEPARTURE</span><b>09:30</b></div>
+            <div><span>ARRIVAL</span><b>10:35</b></div>
+          </div>
+          <div class="pass-meta">
+            <span>HIGUCHI NAMI様（EBXM32・31K）／ヒグチ タダオ様（EC77LQ・31H）</span>
+            <a href="https://booking.jal.co.jp/jl/dom-pbkg/manage-booking" target="_blank" rel="noopener">予約照会 ↗</a>
+          </div>
+        </div>
+        <div class="pass-stub">BOARDING</div>
+      </div>
+
+      <div class="card spot">
+        <div class="card-inner">
+          <div class="tag">📍 <a href="https://komatsunomori.jp/" target="_blank" rel="noopener">こまつの杜 ↗</a></div>
+          <div class="place">こまつの杜</div>
+          <div class="desc">小松市 ・ JR小松駅前</div>
+        </div>
+      </div>
+      <div class="drive-note"><div class="dot"></div>小松 → 金沢 移動</div>
+
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">🏨 <a href="https://www.daiwaroynet.jp/kanazawa-ekinishi/" target="_blank" rel="noopener">ダイワロイネットホテル金沢駅西口 ↗</a></div>
+          <h3>◇デラックスツイン　禁煙◇ ～ReFa製品完備～</h3>
+          <div class="plan">【グループ新規開業記念】期間限定プラン　～素泊まり～</div>
+          <div class="rows">
+            <div><span>所在地</span><span>石川県金沢市広岡1丁目12-17</span></div>
+            <div><span>TEL</span><span>076-224-5280</span></div>
+            <div><span>チェックイン</span><span>2026-10-10</span></div>
+            <div><span>チェックアウト</span><span>2026-10-12（2泊）</span></div>
+            <div><span>ご予約人数</span><span>大人2名・子ども0名／1室</span></div>
+            <div><span>合計（税込）</span><span>¥99,710</span></div>
+            <div><span>ポイント値引き</span><span>−¥33,050</span></div>
+          </div>
+          <div class="total"><span>お支払い金額（税込）</span><span>¥66,660</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">10/11</div>
+      <div class="dow sun">日</div>
+      <div class="note">DAY 2</div>
+    </div>
+    <div class="cards">
+      <div class="card hotel">
+        <div class="card-inner">
+          <div class="tag">🏨 <a href="https://www.daiwaroynet.jp/kanazawa-ekinishi/" target="_blank" rel="noopener">ダイワロイネットホテル金沢駅西口 ↗</a></div>
+          <h3>連泊 2泊目</h3>
+          <div class="plan">◇デラックスツイン　禁煙◇ ～ReFa製品完備～（素泊まり）</div>
+          <div class="rows">
+            <div><span>チェックアウト</span><span>2026-10-12</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card spot">
+        <div class="card-inner">
+          <div class="tag">📍 <a href="https://www.motorcar-museum.jp/" target="_blank" rel="noopener">日本自動車博物館 ↗</a></div>
+          <div class="place">日本自動車博物館</div>
+          <div class="desc">小松市二ツ梨町</div>
+        </div>
+      </div>
+
+      <div class="card spot">
+        <div class="card-inner">
+          <div class="tag">📍 <a href="https://natadera.com/" target="_blank" rel="noopener">那谷寺 ↗</a></div>
+          <div class="place">那谷寺</div>
+          <div class="desc">小松市那谷町</div>
+        </div>
+      </div>
+
+      <div class="card spot">
+        <div class="card-inner">
+          <div class="tag">📍 <a href="https://www.city.hakusan.lg.jp/bunka/bunkazai/1006458/1006451/1002399.html" target="_blank" rel="noopener">鳥越城跡 ↗</a></div>
+          <div class="place">鳥越城跡</div>
+          <div class="desc">白山市三坂町</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day">
+    <div class="day-head">
+      <div class="num">10/12</div>
+      <div class="dow">月</div>
+      <div class="note">DAY 3 ・ 最終日</div>
+    </div>
+    <div class="cards">
+      <div class="drive-note"><div class="dot"></div>ダイワロイネットホテル金沢駅西口 チェックアウト</div>
+
+      <div class="card bus">
+        <div class="bus-main">
+          <div class="tag">🚄 帰りの新幹線 ・ 予約未定</div>
+          <div class="bus-route">
+            <div><div class="apt">金沢</div><div class="city">石川</div></div>
+            <div class="arrow"></div>
+            <div><div class="apt">東京</div><div class="city">未定</div></div>
+          </div>
+          <div class="bus-meta">予約が決まり次第、便名・時刻を追記します</div>
+        </div>
+        <div class="bus-stub">TBD</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">HND ✈ KMQ ・ こまつの杜 ／ 日本自動車博物館 ／ 那谷寺 ／ 鳥越城跡 ・ 金沢駅西口(泊) ・ 帰り新幹線(未定)　｜　2026.10.10 – 10.12</div>
+
+</div>
+</body>
+</html>
