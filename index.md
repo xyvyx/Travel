@@ -74,9 +74,6 @@ layout: default
       <li class="tr-entry"><a href="./2026-07-08/main.html">2026-07-08_関宿城</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B47%E6%9C%888%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
       <li class="tr-entry"><a href="./2026-06-28/main.html">2026-06-28_旧大石家住宅</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B46%E6%9C%8828%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
       <li class="tr-entry"><a href="./2026-06-06/main.html">2026-06-06_宇都宮城</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B46%E6%9C%886%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
-      <li class="tr-entry"><a href="./2026-10-10/2026-10-10/kanazawa_itinerary.html">2026-06-06_宇都宮城</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B46%E6%9C%886%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
-      <li class="tr-entry"><a href="./2026-12-26/2026-12-26/miyakojima-itinerary.html">2026-06-06_宇都宮城</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B46%E6%9C%886%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
-      <li class="tr-entry"><a href="./2027-02-10/2027-02-10/okinawa_2027_itinerary.html">2026-06-06_宇都宮城</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B46%E6%9C%886%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
       <li class="tr-entry"><a href="./2026-09-09/main.html">2026-09-09_ロン・ミュエク</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B49%E6%9C%889%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
       <li class="tr-entry"><a href="./2026-09-02/main.html">2026-09-02_つながるかたち展</a><a class="tr-photo" href="https://photos.google.com/search/2026%E5%B9%B49%E6%9C%882%E6%97%A5" target="_blank" rel="noopener">フォト</a></li>
       <li class="tr-entry"><a href="./9999-01-01/main.html">既存天守閣12城</a></li>
